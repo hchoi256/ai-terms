@@ -21,11 +21,15 @@
   - 가중치 0으로 만듬
 - L1 Regularization ![image](https://user-images.githubusercontent.com/39285147/178137788-8e1849fb-75bf-4967-9a88-32a0e2feea52.png)
   - 가중치 0에 가깝게 만듬
+- i.e., LASSO, etc.
 
 ## 4. Drop-out
 ![image](https://user-images.githubusercontent.com/39285147/178137809-e0bce3e4-a1ff-413c-85f6-30bc7d29e598.png)
 
 신경망 일부를 사용하지 않는 방법
+
+## 5. Ensemble
+average over a number of models
 
 ## Underfitting
 학습 데이터에 대한 정확도가 낮음
