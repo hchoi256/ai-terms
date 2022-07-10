@@ -1,3 +1,3 @@
 # AI Terms
 
-### [Entropy](https://github.com/EricChoii/ai-terms/tree/main)
+### [Entropy](https://github.com/EricChoii/ai-terms/blob/main/entropy.md)
