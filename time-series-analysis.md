@@ -17,4 +17,18 @@
 - 잔차제곱합과 같은 손실 함수(loss function)를 최소화 함으로써 예측 정확도를 향상시키는 것
 
 ### 관련 연구
-- 최근에는 딥러닝을 이용하여 시계열 데이터의 연속성을 찾아내는 방법이 연구되고 있다; RNN 종류의 LSTM이 좋은 성능을 나타낸다
+- 최근에는 딥러닝을 이용하여 시계열 데이터의 연속성을 찾아내는 방법이 연구되고 있다; RNN 종류의 LSTM이 좋은 성능을 나타낸다.
+
+## ML/DL Algorithms w/ 시계열
+- 머신러닝
+  - Multi-Layer Perceptron (MLP)
+  - Bayesian Neural Network (BNN)
+  - Radial Basis Functions (RBF)
+  - Generalized Regression Neural Networks (GRNN)
+  - kernel regression K-Nearest Neighbor regression (KNN)
+  - CART regression trees (CART)
+  - Support Vector Regression (SVR)
+  - Gaussian Processes (GP)
+- 딥러닝
+  - Recurrent Neural Network (RNN)
+  - Long Short-Term Memory (LSTM)
