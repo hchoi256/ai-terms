@@ -1,3 +1,3 @@
 # AI Terms
 
-### [Entropy](https://acdongpgm.tistory.com/177)
+### [Entropy](https://github.com/EricChoii/ai-terms/tree/main)
