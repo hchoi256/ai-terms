@@ -20,7 +20,7 @@
 - 최근에는 딥러닝을 이용하여 시계열 데이터의 연속성을 찾아내는 방법이 연구되고 있다; RNN 종류의 LSTM이 좋은 성능을 나타낸다.
 
 ## ML/DL Algorithms w/ 시계열
-- 머신러닝
+- **머신러닝**
   - Multi-Layer Perceptron (MLP)
   - Bayesian Neural Network (BNN)
   - Radial Basis Functions (RBF)
@@ -29,6 +29,6 @@
   - CART regression trees (CART)
   - Support Vector Regression (SVR)
   - Gaussian Processes (GP)
-- 딥러닝
+- **딥러닝**
   - Recurrent Neural Network (RNN)
   - Long Short-Term Memory (LSTM)
