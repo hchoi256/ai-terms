@@ -11,6 +11,11 @@
 
 ## [시계열 분석](https://github.com/EricChoii/ai-terms/blob/main/time-series-analysis.md)
 ## [Overfitting](https://github.com/EricChoii/ai-terms/blob/main/overfitting.md)
+## 차원의 저주
+<details markdown="1">
+<summary></summary>
+차원이 증가하면서 학습데이터 수가 차원 수보다 적어져서 성능이 저하되는 현상
+</details>
 
 ****
 # Statistic / Probability
