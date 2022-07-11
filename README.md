@@ -14,6 +14,7 @@
 
 ****
 # Statistic / Probability
+
 ## Central Limit Theorem
 <details markdown="1">
 <summary></summary>
@@ -29,6 +30,13 @@
 <details markdown="1">
 <summary></summary>
 경험적 확률과 수학적 확률 사이의 관계를 나타내는 법칙; 표본집단의 크기가 커지면 그 표본평균이 모평균에 가까워짐을 의미
+</details>
+
+## Normalization vs. Standardization
+<details markdown="1">
+<summary></summary>
+정규화: [0, 1] 분포
+표준화: 평균 0, 표준편차 1 분포
 </details>
 
 ****
