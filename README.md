@@ -36,6 +36,7 @@
 <details markdown="1">
 <summary></summary>
 정규화: [0, 1] 분포
+
 표준화: 평균 0, 표준편차 1 분포
 </details>
 
