@@ -1,5 +1,5 @@
 ****
-# Machine Learning
+# *Machine Learning*
 
 ### [Entropy](https://github.com/EricChoii/ai-terms/blob/main/entropy.md)
 
@@ -18,7 +18,7 @@
 </details>
 
 ****
-# Statistic / Probability
+# *Statistic / Probability*
 
 ### Central Limit Theorem
 <details markdown="1">
@@ -46,5 +46,5 @@
 </details>
 
 ****
-# Lienar Algebra
+# *Lienar Algebra*
 
