@@ -1,7 +1,7 @@
 # Entropy (정보 엔트로피)
 ![image](https://user-images.githubusercontent.com/39285147/178137939-21da2857-8381-4bae-be75-73744015141d.png)
 
-불확실성(Uncertainty)의 척도로 Entropy가 높다는 것은 정보가 많고 확률링이 낮아 불확실성이 높다.
+데이터 집합의 혼잡도를 의미한다. 불확실성(Uncertainty)의 척도로 Entropy가 높다는 것은 정보가 많고 확률링이 낮아 불확실성이 높다.
 
 일반적으로, 분포확률(q)을 아는 경우, 단순 엔트로피로 설명 가능하다.
 
