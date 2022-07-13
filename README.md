@@ -45,6 +45,8 @@
 표준화: 평균 0, 표준편차 1 분포
 </details>
 
+### [Bias-Variance Trade-off](https://github.com/EricChoii/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/sl-foundation.md)
+
 ****
 # *Lienar Algebra*
 
