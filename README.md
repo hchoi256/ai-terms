@@ -31,14 +31,20 @@
 이미지에서 feature를 뽑기위해 사용하는 합성곱 연산 과정이다.
 </details>
 
-### CAM / Grad_CAM @@@@
+### CAM / Grad_CAM
 <details markdown="1">
+어떤 target concept일지라도 final convolutional layer로 흐르는 gradient를 사용하여 이미지의 중요한 영역을 강조하는 localization map을 만든다.
 <summary></summary>
-
 </details>
 
 ### GAP @@@@
 <details markdown="1">
+![image](https://user-images.githubusercontent.com/39285147/179212153-3e0a7ee0-a531-43ff-a0e4-64254f9aa362.png)
+
+GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feature map의 크기와 관계없이 channel이 k개라면 k개의 평균 값을 얻을 수 있다.
+- GAP는 FC Layer와 달리 연산이 필요한 파라미터 수를 크게 줄일 수 있다
+  - Regulariztion과 유사한 동작을 통해 overfitting을 방지할 수 있다.
+- FC layer는 Convolution layer에서 유지하던 위치정보가 손실되는 반면, GAP layer는 위치정보를 담고 있기 때문에 localization에 유리하다.
 <summary></summary>
 
 </details>
