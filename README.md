@@ -43,6 +43,12 @@
 발견한 특징점을 기반으로 이미지를 분류하는 레이어 구간
 </details>
 
+### Black box
+<details markdown="1">
+<summary></summary>
+Black box란 결과는 인간과 유사하게 또는 원하는대로 도출할 수 있지만 어떻게, 무엇을 근거로 그러한 결과가 나왔는지 알 수 없는 것
+</details>
+
 ### GAP
 <details markdown="1">
 
