@@ -31,6 +31,18 @@
 이미지에서 feature를 뽑기위해 사용하는 합성곱 연산 과정이다.
 </details>
 
+### CAM / Grad_CAM @@@@
+<details markdown="1">
+<summary></summary>
+
+</details>
+
+### GAP @@@@
+<details markdown="1">
+<summary></summary>
+
+</details>
+
 ****
 # *Statistic / Probability*
 
