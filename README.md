@@ -23,6 +23,12 @@
 전이 학습(Transfer Learning)은 특정 분야에서 학습된 신경망의 일부 능력을 유사하거나 전혀 새로운 분야에서 사용되는 신경망의 학습에 이용하는 것을 의미합니다.
 </details>
 
+### 강화학습
+<details markdown="1">
+<summary></summary>
+주어진 상황에서 어떤 행동을 취할지 보상 개념을 토대로 학습한다.
+</details>
+
 ****
 # *Deep Learning*
 ### Convolution
