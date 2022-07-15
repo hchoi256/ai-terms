@@ -43,8 +43,11 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 <summary></summary>
 </details>
 
-### CAM / Grad_CAM
+### Grad_CAM
 <details markdown="1">
+
+![image](https://user-images.githubusercontent.com/39285147/179212552-2f937eab-1a74-4fa9-9a98-5e27c0db0f39.png)
+
 어떤 target concept일지라도 final convolutional layer로 흐르는 gradient를 사용하여 이미지의 중요한 영역을 강조하는 localization map을 만든다.
 <summary></summary>
 </details>
