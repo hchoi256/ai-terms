@@ -53,6 +53,21 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 </details>
 
 
+### Back Propagation
+<details markdown="1">
+역전파 알고리즘은 출력값에 대한 입력값의 기울기(미분값)을 출력층 layer에서부터 계산하여 거꾸로 전파시키는 것이다.
+
+전 layer들에서의 기울기와 서로 곱하는 형식으로 나아가면서 최종적으로 출력층에서의 output값에 대한 입력층에서의 input data의 기울기 값을 구할 수 있다.
+
+1. 이렇게 기울기(미분값)을 구하는 이유?
+- 역전파 알고리즘으로 각 layer에서 기울기 값을 구하고 그 기울기 값을 이용하여 Gradient descent 방법으로 가중치 w와 b를 update시키면서 파라미터가 매우 많고 layer가 여러개 있을때 학습하기 어려운 문제를 해결한다.
+
+2. 최종 output에 대한 기울기 값을 각 layer별로 구하는 이유?
+- 각 layer의 node(parameter)별로 학습을 해서 각 가중치(기울기 값)을 업데이트한다.
+
+<summary></summary>
+</details>
+
 ****
 # *Statistic / Probability*
 
