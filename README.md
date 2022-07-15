@@ -31,6 +31,12 @@
 이미지에서 feature를 뽑기위해 사용하는 합성곱 연산 과정이다.
 </details>
 
+### Fully Connected Layer
+<details markdown="1">
+<summary></summary>
+발견한 특징점을 기반으로 이미지를 분류하는 레이어 구간
+</details>
+
 ### GAP
 <details markdown="1">
 
