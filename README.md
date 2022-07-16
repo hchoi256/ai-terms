@@ -45,8 +45,28 @@
 
 ### Padding, Stride, Pooling
 <details markdown="1">
+Padding: ( n - f + 1 ) x ( n - f + 1 )
+- edge 부분 픽셀은 한 번만 사용되어 윤곽 정보 소실을 방지한다
+- 이미지 축소를 방지한다
+
+Stride
+![image](https://user-images.githubusercontent.com/39285147/179364041-af7c8918-1e2b-49a2-b8d1-147b1b3aff8b.png)
+
+- 필터 적용시 이동 간격
+
+Pooling
+- 사이즈감소 및 노이즈 제거
+
+> convolution layer의 경우 원본이미지 크기를 유지하면서 depth를 키우기 때문에 메모리를 많이 차지한다. 따라서, 특징은 유지하면서 데이터와 feature map의 사이즈를 줄임으로써 용량을 절약할 수 있다. 
+
 <summary></summary>
-발견한 특징점을 기반으로 이미지를 분류하는 레이어 구간
+
+</details>
+
+### Fine-tuning
+<details markdown="1">
+<summary></summary>
+기존에 학습되어진 모델을 기반으로 아키텍쳐를 새로운 목적에 맞게 변형하고 이미 학습된 모델 Weights로 부터 학습을 업데이트 하는 방법이다.
 </details>
 
 ### Zero-shot Learning
