@@ -43,6 +43,21 @@
 발견한 특징점을 기반으로 이미지를 분류하는 레이어 구간
 </details>
 
+### Padding, Stride, Pooling
+<details markdown="1">
+<summary></summary>
+발견한 특징점을 기반으로 이미지를 분류하는 레이어 구간
+</details>
+
+### Zero-shot Learning
+<details markdown="1">
+<summary></summary>
+Zero shot은 train set에 포함되지 않은 unseen class를 예측하는 분야로, test시에 unseen data를 입력 받아도, seen data로 학습된 지식을 전이하여 unseen data를 unseen class로 예측할 수 있다.
+- CV: 클래스 레이블 간의 표현 유사성에 의존
+- NLP: 동일한 의미적 공간에서의 레이블을 나타내는 '라벨 이해' 기능 기반
+
+</details>
+
 ### Black box
 <details markdown="1">
 <summary></summary>
