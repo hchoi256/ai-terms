@@ -114,6 +114,18 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 표준화: 평균 0, 표준편차 1 분포
 </details>
 
+### d-separation (방향성 독립)
+<details markdown="1">
+<summary></summary>
+방향성 그래프 모형에서 어떤 두 노드(확률변수)가 조건부 독립인지 아닌지 알아보는 방법
+</details>
+
+### 조건부 독립
+<details markdown="1">
+<summary></summary>
+P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와 B 사건은, C사건 하에서는 서로 독립이다
+</details>
+
 ### [Bias-Variance Trade-off](https://github.com/EricChoii/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/sl-foundation.md)
 
 ****
