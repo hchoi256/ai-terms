@@ -22,6 +22,12 @@
 주어진 상황에서 어떤 행동을 취할지 **보상** 심리를 기반으로 하는 Greedy algorithm으로 학습한다.
 </details>
 
+#### GAN
+<details markdown="1">
+<summary></summary>
+비지도학습에 사용되는 머신러닝 프레임워크의 한 종류로, 생성자와 구분자가 서로 대립하며(Adversarial:대립하는) 서로의 성능을 점차 개선해 나가는 쪽으로 학습이 진행되는 것이 주요 개념이다.
+</details>
+
 ****
 # *Deep Learning*
 #### Convolution
