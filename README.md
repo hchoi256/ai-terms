@@ -1,6 +1,6 @@
 ****
 # *Machine Learning*
-#### [Entropy](https://github.com/EricChoii/ai-terms/blob/main/entropy.md)
+#### [Entropy, Cross Entropy](https://github.com/EricChoii/ai-terms/blob/main/entropy.md)
 
 #### [시계열 분석](https://github.com/EricChoii/ai-terms/blob/main/time-series-analysis.md)
 #### [Overfitting](https://github.com/EricChoii/ai-terms/blob/main/overfitting.md)
