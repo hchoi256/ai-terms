@@ -94,7 +94,7 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 <summary></summary>
 </details>
 
-### Grad_CAM
+#### Grad_CAM
 <details markdown="1">
 
 ![image](https://user-images.githubusercontent.com/39285147/179212552-2f937eab-1a74-4fa9-9a98-5e27c0db0f39.png)
@@ -126,10 +126,10 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 <details markdown="1">
 <summary></summary>
 
-#### 정의
+##### 정의
 모집단(평균: μ, 표준편차: σ)이 어떤 분포를 따르던지 무관하게, 표본평균의 표본분포는 n이 커지면(>= 30) 평균이 μ이고 표준편차가 σ/n인 **정규분포**를 따른다.
 
-#### 의의
+##### 의의
 표본평균을 통해서 모집단의 모수인 모평균과 모표준편차를 추정할 수 있는 확률적 근거 제시
 </details>
 
