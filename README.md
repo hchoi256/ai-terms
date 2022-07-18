@@ -3,12 +3,6 @@
 
 ### [Entropy](https://github.com/EricChoii/ai-terms/blob/main/entropy.md)
 
-### 계층적샘플링
-<details markdown="1">
-<summary></summary>
-모집단의 데이터 분포 비율을 유지하면서 데이터를 샘플링(취득)하는 것을 말합니다
-</details>
-
 ### [시계열 분석](https://github.com/EricChoii/ai-terms/blob/main/time-series-analysis.md)
 ### [Overfitting](https://github.com/EricChoii/ai-terms/blob/main/overfitting.md)
 ### 차원의 저주
@@ -167,6 +161,12 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 </details>
 
 ### [Bias-Variance Trade-off](https://github.com/EricChoii/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/sl-foundation.md)
+
+### 계층적샘플링
+<details markdown="1">
+<summary></summary>
+모집단의 데이터 분포 비율을 유지하면서 데이터를 샘플링(취득)하는 것을 말합니다
+</details>
 
 ****
 # *Lienar Algebra*
