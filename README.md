@@ -26,7 +26,7 @@
 ### 강화학습
 <details markdown="1">
 <summary></summary>
-주어진 상황에서 어떤 행동을 취할지 보상 개념을 토대로 학습한다.
+주어진 상황에서 어떤 행동을 취할지 **보상** 심리를 기반으로 하는 Greedy algorithm으로 학습한다.
 </details>
 
 ****
@@ -36,6 +36,10 @@
 <summary></summary>
 이미지에서 feature를 뽑기위해 사용하는 합성곱 연산 과정이다.
 </details>
+
+### [Gradient Descent and Stocastic Gradient Descent](https://github.com/EricChoii/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/gradient-discent.md)
+
+### [Ensemble](https://github.com/EricChoii/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/ensemble.md)
 
 ### Fully Connected Layer
 <details markdown="1">
@@ -73,8 +77,9 @@ Pooling
 <details markdown="1">
 <summary></summary>
 Zero shot은 train set에 포함되지 않은 unseen class를 예측하는 분야로, test시에 unseen data를 입력 받아도, seen data로 학습된 지식을 전이하여 unseen data를 unseen class로 예측할 수 있다.
-- CV: 클래스 레이블 간의 표현 유사성에 의존
-- NLP: 동일한 의미적 공간에서의 레이블을 나타내는 '라벨 이해' 기능 기반
+- **CV**: 클래스 레이블 간의 표현 유사성에 의존
+
+- **NLP**: 동일한 의미적 공간에서의 레이블을 나타내는 '라벨 이해' 기능 기반
 
 </details>
 
