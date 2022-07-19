@@ -49,7 +49,7 @@
 #### Padding, Stride, Pooling
 <details markdown="1">
 Padding: ( n - f + 1 ) x ( n - f + 1 )
-- edge 부분 픽셀은 한 번만 사용되어 윤곽 정보 소실을 방지한다
+- edge 부분 픽셀은 한 번만 사용되어 윤곽 정보 소실을 방지한다.
 - 이미지 축소를 방지한다
 
 Stride
