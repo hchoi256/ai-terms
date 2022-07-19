@@ -7,7 +7,7 @@
 #### 차원의 저주
 <details markdown="1">
 <summary></summary>
-차원이 증가하면서 학습데이터 수가 차원 수보다 적어져서 성능이 저하되는 현상
+차원이 증가하면서 학습데이터 수가 차원 수보다 적어져서 성능이 저하되는 현상이다.
 </details>
 
 #### 전이학습(Transfer Learning)
