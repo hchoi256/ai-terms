@@ -1,9 +1,9 @@
 ****
 # *Machine Learning*
-#### [Entropy, KL Divergence](https://github.com/EricChoii/ai-terms/blob/main/entropy.md)
+#### [Entropy, KL Divergence](https://github.com/hchoi256/ai-terms/blob/main/entropy.md)
 
-#### [시계열 분석](https://github.com/EricChoii/ai-terms/blob/main/time-series-analysis.md)
-#### [Overfitting](https://github.com/EricChoii/ai-terms/blob/main/overfitting.md)
+#### [시계열 분석](https://github.com/hchoi256/ai-terms/blob/main/time-series-analysis.md)
+#### [Overfitting](https://github.com/hchoi256/ai-terms/blob/main/overfitting.md)
 #### 차원의 저주
 <details markdown="1">
 <summary></summary>
@@ -36,9 +36,9 @@
 이미지에서 feature를 뽑기위해 사용하는 합성곱 연산 과정이다.
 </details>
 
-#### [Gradient Descent and Stocastic Gradient Descent](https://github.com/EricChoii/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/gradient-discent.md)
+#### [Gradient Descent and Stocastic Gradient Descent](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/gradient-discent.md)
 
-#### [Ensemble](https://github.com/EricChoii/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/ensemble.md)
+#### [Ensemble](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/ensemble.md)
 
 #### Fully Connected Layer
 <details markdown="1">
@@ -165,7 +165,7 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와 B 사건은, C사건 하에서는 서로 독립이다
 </details>
 
-#### [Bias-Variance Trade-off](https://github.com/EricChoii/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/sl-foundation.md)
+#### [Bias-Variance Trade-off](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/sl-foundation.md)
 
 #### 계층적샘플링
 <details markdown="1">
