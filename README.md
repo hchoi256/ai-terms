@@ -55,6 +55,19 @@ Sigmoid - 이진분류
 발견한 특징점을 기반으로 이미지를 분류하는 레이어 구간
 </details>
 
+#### Batch and Epoch
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/179927500-1f89d8b9-f1d0-409d-b935-d54028e00113.png)
+
+**Batch**: 전체 트레이닝 데이터 셋을 여러 작은 그룹으로 나누었을 때, 하나의 소그룹에 속하는 데이터 수를 의미한다.
+- Batch 사이즈 ↑, 한 번에 처리해야할 양 ↑, 학습 속도가 ↓, 메모리 부족
+- Batch 사이즈 ↓, 적은 샘플을 참조해서 가중치 업데이트가 빈번하게 일어나기 때문에, 비교적 *불안정하게* 훈련될 수도 있습니다.
+
+**Epoch**: 딥러닝에서는 epoch은 전체 트레이닝 셋이 신경망을 통과한 횟수이다. 가령, 1-epoch는 전체 트레인이 셋이 하나의 신경망에 적용되어 순전파와 역전파를 통해 신경망을 한 번 통과했다는 것을 의미한다.
+</details>
+
 #### Padding, Stride, Pooling
 <details markdown="1">
 Padding: ( n - f + 1 ) x ( n - f + 1 )
