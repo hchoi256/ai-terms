@@ -36,6 +36,15 @@
 이미지에서 feature를 뽑기위해 사용하는 합성곱 연산 과정이다.
 </details>
 
+#### Softmax vs. Sigmoid (분류)
+<details markdown="1">
+<summary></summary>
+Softmax - 다중분류
+
+Sigmoid - 이진분류
+</details>
+
+
 #### [Gradient Descent and Stocastic Gradient Descent](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/gradient-discent.md)
 
 #### [Ensemble](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/ensemble.md)
