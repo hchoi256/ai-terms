@@ -40,7 +40,7 @@
 
 #### [Ensemble](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/ensemble.md)
 
-#### Fully Connected Layer
+#### Fully Connected Layer(= hidden layer)
 <details markdown="1">
 <summary></summary>
 발견한 특징점을 기반으로 이미지를 분류하는 레이어 구간
