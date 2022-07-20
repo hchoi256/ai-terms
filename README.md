@@ -10,6 +10,12 @@
 차원이 증가하면서 학습데이터 수가 차원 수보다 적어져서 성능이 저하되는 현상이다.
 </details>
 
+#### k-fold 교차 검증
+<details markdown="1">
+<summary></summary>
+테스트셋으로 모델 성능을 평가하는 것에 치중되어서 테스트셋 과적합이 발생할 수 있다 (한 테스트셋에 대해서만 성능이 좋게 나왔을수도). 따라서, 훈련 데이터셋에 대하여 일정 비율을 fold로 분류하여 테스트 검증과 별개로 따로 **교차 검증**을 수행한다.
+</details>
+
 #### 전이학습(Transfer Learning)
 <details markdown="1">
 <summary></summary>
