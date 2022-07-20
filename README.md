@@ -30,7 +30,7 @@
 
 ****
 # *Deep Learning*
-#### Convolution
+#### [Convolution](https://github.com/hchoi256/ai-boot-camp/blob/main/ai/deep-learning/cnn.md)
 <details markdown="1">
 <summary></summary>
 이미지에서 feature를 뽑기위해 사용하는 합성곱 연산 과정이다.
