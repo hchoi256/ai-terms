@@ -347,7 +347,7 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 </details>
 
-#### [MLE(최대우도법)]()
+#### [MLE(최대우도법)](https://github.com/hchoi256/ai-terms/blob/main/mle.md)
 
 ****
 # *Lienar Algebra*
