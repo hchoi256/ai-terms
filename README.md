@@ -360,6 +360,14 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 </details>
 
+#### False Positive
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/180516221-642fd238-1c96-486f-a712-469386801d69.png)
+
+</details>
+
 ****
 # *Lienar Algebra*
 
