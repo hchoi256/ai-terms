@@ -123,7 +123,9 @@ Pooling
 <details markdown="1">
 <summary></summary>
 
-Zero shot은 train set에 포함되지 않은 unseen class를 예측하는 분야로, test시에 unseen data를 입력 받아도, seen data로 학습된 지식을 전이하여 unseen data를 unseen class로 예측할 수 있다.
+일반적으로 딥러닝은 training에 사용된 class만을 예측할 수 있다. 따라서 unseen data가 입력되면 seen class로 예측하는 바보가 되버리는데, Zero shot은 train set에 포함되지 않은 unseen class를 예측하는 분야이다.
+
+즉, unseen data를 입력 받아도, seen data로 학습된 지식을 전이하여 unseen data를 unseen class로 예측할 수 있다.
 
 - **CV**: 클래스 레이블 간의 표현 유사성에 의존
 
