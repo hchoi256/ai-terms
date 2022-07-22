@@ -223,7 +223,8 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 ![image](https://user-images.githubusercontent.com/39285147/180481741-fee61485-7d1c-42f8-825d-3ecec28427bc.png)
 
 ### 이산확률분포 (Binomial, Bernoulli, Multinomial, Multinoulli, Geometric, Poisson, Hypergeometric)
- 
+pmf를 통해 표현 가능하며, 확률 변수가 가질 수 있는 값이 가산 개 있다.
+
 *Binomial*(이항분포): 독립된 연속된 N번의 베르누이 시행에서 시행 확률(p)를 반복했을 때의 이산확률분포이다 (i.e., 동전던지기)
 
 *Negative-Binomial*(음이항분포):  음이항분포는 기하분포를 일반화한 버전으로, 기하분포는 처음 성공까지를 보지만, 음이항분포는 r번째 성공까지이다.
@@ -241,6 +242,7 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 *Hypergeometric*(초기하분포): 비복원추출에서 N개 중에 M개가 원하는 것이고, K번 추출했을때 원하는 것 x개가 뽑힐 확률의 분포이다 (i.e., 흰/검 공이 들어있는 항아리에서 흰 공을 k개 뽑을 확률분포).
 
 ### 연속확률분포 (정규분포, 감마분포, 지수분포, 카이제곱분포, 베타분포, 균일분포)
+pdf를 통해 표현 가능하며, 확률 변수가 가질 수 있는 값이 셀 수 없다.
 
 *Normal*(정규분포): 평균과 표준편차를 기준으로 종모양 분포를 나타낸다. 여기서, 평균이 0이고 표준편차가 1인 분포를 표준정규분포라 지칭한다.
 
