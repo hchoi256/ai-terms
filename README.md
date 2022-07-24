@@ -388,6 +388,32 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 </details>
 
+#### Naive Beyas(나이브 베이스)
+<details markdown="1">
+<summary></summary>
+
+1. Prior Probability
+
+![image](https://user-images.githubusercontent.com/39285147/180639502-806b47c7-6ace-43df-8f75-e9fdab5defce.png)
+
+전체 데이터 수에서 각 집합 데이터 수의 비율을 구한 값을 '사전확률'로 하여 새로운 데이터가 어디에 분류될지 예측한다.
+
+2. Likelihood (우도)
+
+![image](https://user-images.githubusercontent.com/39285147/180639529-60fadaf3-fe23-47a1-ae7f-39064efd35f8.png)
+
+![image](https://user-images.githubusercontent.com/39285147/180639518-043f4741-4aa0-43ce-8806-41a01ac3099d.png)
+
+새로운 데이터 주변에서 한 원에 속하는 범주 안에 속한 빨간/파란공 비율을 각각 도출하여 더 큰 '우도'를 갖는 집합으로 새로운 데이터를 분류한다.
+
+3. Posterior Probability
+
+![image](https://user-images.githubusercontent.com/39285147/180639613-ba4a1e96-ae57-4735-bc82-82a5a8fb93a5.png)
+
+'사후확률'은 사전확률에 우도를 곱한 값이다.
+
+</details>
+
 ****
 # *Lienar Algebra*
 
