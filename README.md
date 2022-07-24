@@ -395,6 +395,10 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 ![image](https://user-images.githubusercontent.com/39285147/180639800-fc63b011-c599-4e24-a0c3-2107c0ec71ff.png)
 ![image](https://user-images.githubusercontent.com/39285147/180640867-9f304ddd-47e5-4a05-b256-775500db9d49.png)
 
+실제 상황에서는 변수들이 서로 알게모르게 의존되어 있어서 모델 학습에 적용하기 어렵다.
+
+이러한 한계를 탈피하여 여러 '독립변수'들로써 모델 학습에 활용하고자 가정하여 Naive라 이름 붙여졌다.
+
 1. Prior Probability
 
 ![image](https://user-images.githubusercontent.com/39285147/180639502-806b47c7-6ace-43df-8f75-e9fdab5defce.png)
