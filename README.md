@@ -16,6 +16,16 @@
 준지도학습은 소량의 labeled data에는ㄴ supervised learning을 활용하고, 소량의 unlabeled data 혹은 대용량 unalbeled data에 대하여 unsupervised learning을 적용해 추가적인 성능 향상을 목표로 한다.
 
 기존 지도학습의 label 종속성에서 다소 벗어나 '데이터 자체의 본질적인 특성'을 모델링하여 소량의 labeled data를 통한 약간의 가이드로 일반화 성능을 끌어올린다.
+
+#### Assumptions
+1. smoothness: 같은 class/cluster에 위치한 두 입력이 입력공간 상에서 고밀도 지역에 위치한다면, 해당 출력도 가까울 것이다.
+2. cluster: 데이터 포인트들이 같은 cluster에 있다면, 그들은 같은 class일 것이다.
+3. manifold: 고차원 데이터를 저차원 manifold로 보낼 수 있다 (고차원에서는 거리가 비슷하여 분류가 어려워서 저차원으로 맵핑해야 한다).
+
+#### Applications
+- CIFA-100
+- ImageNet
+
 </details>
 
 
