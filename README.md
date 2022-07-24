@@ -380,7 +380,7 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 </details>
 
-#### False Positive
+#### Confusion Matrix(FN, TN, TP, FP)
 <details markdown="1">
 <summary></summary>
 
