@@ -388,9 +388,29 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 </details>
 
-#### Naive Beyas(나이브 베이스)
+#### Frequentist vs. Beyas vs. Naive Beyas(나이브 베이스)
 <details markdown="1">
 <summary></summary>
+
+### Frequentist
+확률을 객관적으로 발생하는 현상이라 본다 (i.e., 주사위 한 번 굴릴 때 1/6); 참된 확률값은 고정값을 가진다.
+
+각 환자의 병은 독립적이라 판단하여 해당 환자를 직접 검사하여 source of pain을 찾는다.
+
+### Beyas 정리
+![image](https://user-images.githubusercontent.com/39285147/180647087-74f8de6e-419b-46ec-ae5b-6dbb0bcf0380.png)
+![image](https://user-images.githubusercontent.com/39285147/180647146-ebb0bd48-b944-4f61-a16a-8f516d517fdf.png)
+
+두 확률 변수의 사전 확률과 사후 확률 사이의 관계를 나타내는 정리이다.
+
+### Naive Beyas
+현상에 대한 관찰자의 주관적 믿음의 체계로써 판단하고 사전확률을 고려하여 과거의 사건이 현재 사건에 영향을 미칠 수 있다고 생각한다; 참된 확률값을 상수가 아닌 분포, 즉 확률 변수라 여긴다.
+
+각 특징들은 서로 '독립적'이라는 점에서 베이즈 정리와 차이점이 있다.
+
+데이터가 각 클래스에 속할 특징 확률을 계산하는 조건부 확률 기반의 분류 방법이다.
+
+비슷한 증상의 이전 환자의 증상과 결합하여 source of pain을 찾는다.
 
 ![image](https://user-images.githubusercontent.com/39285147/180639800-fc63b011-c599-4e24-a0c3-2107c0ec71ff.png)
 ![image](https://user-images.githubusercontent.com/39285147/180640867-9f304ddd-47e5-4a05-b256-775500db9d49.png)
