@@ -22,6 +22,15 @@ Naive Beyas 정리를 토대로 사전확률을 통한 사후확률 도출이라
 
 </details>
 
+#### ROC (Receiver Operating Characteristic)
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/180647724-6bd69d98-6ae4-46f5-b28c-255d5acc95dd.png)
+
+ROC 곡선은 Binary Classifier System에 대한 성능 평가 기법으로, 모델이 맞게 예측한 TP를 y축으로 틀리게 예측한 FP를 x축으로 하여 도표를 그린다.
+</details>
+
 #### Semi-Supervised Learning
 <details markdown="1">
 <summary></summary>
