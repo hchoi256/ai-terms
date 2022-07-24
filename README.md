@@ -10,6 +10,15 @@
 차원이 증가하면서 학습데이터 수가 차원 수보다 적어져서 성능이 저하되는 현상이다.
 </details>
 
+#### Semi-Supervised Learning
+<details markdown="1">
+<summary></summary>
+준지도학습은 소량의 labeled data에는ㄴ supervised learning을 활용하고, 소량의 unlabeled data 혹은 대용량 unalbeled data에 대하여 unsupervised learning을 적용해 추가적인 성능 향상을 목표로 한다.
+
+기존 지도학습의 label 종속성에서 다소 벗어나 '데이터 자체의 본질적인 특성'을 모델링하여 소량의 labeled data를 통한 약간의 가이드로 일반화 성능을 끌어올린다.
+</details>
+
+
 #### 표준화 vs. 정규화 vs. MinMaxScaler
 <details markdown="1">
 <summary></summary>
@@ -21,10 +30,15 @@
 *MinMaxScaler*: 데이터가 정규분포를 따르지 않아도 될 때, 0과 1사이의 범위값으로 변환한다.
 </details>
 
-#### k-fold 교차 검증
+#### k-fold 교차 검증 (cross validation)
 <details markdown="1">
 <summary></summary>
-테스트셋으로 모델 성능을 평가하는 것에 치중되어서 테스트셋 과적합이 발생할 수 있다 (한 테스트셋에 대해서만 성능이 좋게 나왔을수도). 따라서, 훈련 데이터셋에 대하여 일정 비율을 fold로 분류하여 테스트 검증과 별개로 따로 교차 검증을 수행한다.
+하나의 테스트셋으로 모델 성능을 평가하는 것에 치중된 테스트셋 과적합을 방지할 수 있다 (한 테스트셋에 대해서만 성능이 좋게 나왔을수도). 
+
+따라서, 훈련 데이터셋에 대하여 일정 비율을 fold로 분류하여 테스트 검증과 별개로 하나씩 테스트셋으로 사용하면서 교차 검증을 수행한다.
+
+이를 통해, 데이터의 100%를 테스트셋으로 활용하면서 총 K개의 성능 결과를 내고, 이 K 값들의 평균을 해당 모델의 성능으로 배출한다.
+
 </details>
 
 #### 전이학습(Transfer Learning)
