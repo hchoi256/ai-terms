@@ -69,6 +69,16 @@ Softmax - 다중분류
 Sigmoid - 이진분류
 </details>
 
+#### 모델 일반화 성능 개선 방법
+<details markdown="1">
+<summary></summary>
+새로운 데이터
+
+이미지 확대, 증대, 회전, 밝기 조절, etc.
+
+etc. (무궁무진함)
+
+</details>
 
 #### [Gradient Descent and Stocastic Gradient Descent](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/gradient-discent.md)
 
