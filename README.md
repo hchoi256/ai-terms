@@ -393,6 +393,7 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 <summary></summary>
 
 ![image](https://user-images.githubusercontent.com/39285147/180639800-fc63b011-c599-4e24-a0c3-2107c0ec71ff.png)
+![image](https://user-images.githubusercontent.com/39285147/180640867-9f304ddd-47e5-4a05-b256-775500db9d49.png)
 
 1. Prior Probability
 
