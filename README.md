@@ -104,13 +104,8 @@ Stride
 
 - 필터 적용시 이동 간격
 
-Pooling: 사이즈감소 및 노이즈 제거
-
-![image](https://user-images.githubusercontent.com/39285147/180636329-dc5f6258-ced6-47c0-ad0b-e76c28804db2.png)
-
-- Global Max Pooling은 탐지 사물을 포인트로 짚는 반면, GAP는 사물의 위치를 범위로 잡아내는 장점이 있다.
-  - **Average pooling method**: smooths out the image and hence the sharp features may not be identified when this pooling method is used.
-  - **Max pooling**: brighter pixels from the image.
+Pooling
+- 사이즈감소 및 노이즈 제거
 
 > convolution layer의 경우 원본이미지 크기를 유지하면서 depth를 키우기 때문에 메모리를 많이 차지한다. 따라서, 특징은 유지하면서 데이터와 feature map의 사이즈를 줄임으로써 용량을 절약할 수 있다. 
 
@@ -144,8 +139,14 @@ Pooling: 사이즈감소 및 노이즈 제거
 Black box란 결과는 인간과 유사하게 또는 원하는대로 도출할 수 있지만 어떻게, 무엇을 근거로 그러한 결과가 나왔는지 알 수 없는 것
 </details>
 
-#### GAP
+#### GAP vs GMP
 <details markdown="1">
+
+![image](https://user-images.githubusercontent.com/39285147/180636329-dc5f6258-ced6-47c0-ad0b-e76c28804db2.png)
+
+- Global Max Pooling은 탐지 사물을 포인트로 짚는 반면, GAP는 사물의 위치를 범위로 잡아내는 장점이 있다.
+  - **Average pooling method**: smooths out the image and hence the sharp features may not be identified when this pooling method is used.
+  - **Max pooling**: brighter pixels from the image.
 
 ![image](https://user-images.githubusercontent.com/39285147/179212153-3e0a7ee0-a531-43ff-a0e4-64254f9aa362.png)
 
