@@ -10,6 +10,18 @@
 차원이 증가하면서 학습데이터 수가 차원 수보다 적어져서 성능이 저하되는 현상이다.
 </details>
 
+#### Decision Theory (의사결정)
+<details markdown="1">
+<summary></summary>
+불확실성에 직면하여 결정을 내리지 않으면 안 될 경우, 어떤 결정을 해야할 것이며, 또 어떤 정보를 어떻게 이용해야 하는가에 관한 문제에 답하려는 통계적 결정이론이다.
+
+기대효용이 최대가 되도록 결정하는 것을 '연역'이라 일컫는다. 결정자에게 불확실성 하에서 합리적이고 가장 적절한 결정을 도출하는 것이다.
+
+#### Applications
+Naive Beyas 정리를 토대로 사전확률을 통한 사후확률 도출이라는 구체화 과정을 거친다.
+
+</details>
+
 #### Semi-Supervised Learning
 <details markdown="1">
 <summary></summary>
@@ -404,11 +416,11 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 </details>
 
-#### Confusion Matrix(FN, TN, TP, FP)
+#### Confusion Matrix(FN, TN, TP, FP) with precision and recall
 <details markdown="1">
 <summary></summary>
 
-![image](https://user-images.githubusercontent.com/39285147/180516436-f1ecd0b6-1e24-461c-8261-8946045a22ff.png)
+![image](https://user-images.githubusercontent.com/39285147/180647570-40aff0f1-6267-4236-8c25-b0226710069d.png)
 
 </details>
 
