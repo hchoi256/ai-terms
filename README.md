@@ -156,6 +156,16 @@ etc. (무궁무진함)
 **Epoch**: 딥러닝에서는 epoch은 전체 트레이닝 셋이 신경망을 통과한 횟수이다. 가령, 1-epoch는 전체 트레인이 셋이 하나의 신경망에 적용되어 순전파와 역전파를 통해 신경망을 한 번 통과했다는 것을 의미한다.
 </details>
 
+#### Gradient Vanishing/Exploding/Clipping
+<details markdown="1">
+<summary></summary>
+**Gradient Vanishing**: 역전파 과정에서 입력층으로 갈 수록 기울기(Gradient)가 점차적으로 작아지는 현상 (시그모이드 대신 ReLU 사용)
+
+**Gradient Exploding**: 기울기가 점차 커지더니 가중치들이 비정상적으로 큰 값이 되면서 결국 발산된다.
+
+**Gradient Clipping**: 기울기 폭주를 막기 위해 임계값을 넘지 않도록 값을 자른다. 
+</details>
+
 #### Padding, Stride, Pooling
 <details markdown="1">
 Padding: ( n - f + 1 ) x ( n - f + 1 )
