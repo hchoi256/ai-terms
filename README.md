@@ -104,6 +104,12 @@ ROC 곡선은 Binary Classifier System에 대한 성능 평가 기법으로, 모
 
 ![image](https://user-images.githubusercontent.com/39285147/180655690-5eefb525-800b-440f-b3ef-be0f143f3ecd.png)
 
+Tensorflow
+- 정적 그래프 생성; 모델 전체 계산 그래프 정의한 다음 ML 모델 실행
+
+PyTorch
+- 동적 그래프; 동작 중에 그래프 정의/조작
+
 </details>
 
 #### 신경망 학습에서 '정확도'가 아닌 '손실함수' 사용 이유?
