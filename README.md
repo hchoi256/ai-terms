@@ -94,13 +94,53 @@ ROC 곡선은 Binary Classifier System에 대한 성능 평가 기법으로, 모
 #### 강화학습
 <details markdown="1">
 <summary></summary>
-주어진 상황에서 어떤 행동을 취할지 **보상** 심리를 기반으로 하는 Greedy algorithm으로 학습한다.
+
+주어진 상황에서 어떤 행동을 취할지 **보상** 심리(= 최대효율) 및 *Greedy algorithm*으로 학습한다.
+
+</details>
+
+#### Generative Model(생성모델) vs. Discriminative Model(분류모델)
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/181839034-973411b8-ce34-49a5-a342-43c51df082b3.png)
+
+### Generative Model
+![image](https://user-images.githubusercontent.com/39285147/181838538-56cdb2b8-d561-4eaa-9db2-47bf3ecba85f.png)
+
+생성모델은 주어진 학습 데이터를 학습하여 **학습 데이터의 분포를 따르는** 유사한 데이터를 생성하는 모델로써, 학습 데이터의 분포를 학습하는 것이 생성모델에서 가장 중요하다.
+
+분별모델과 달리 x가 발생할 확률인 P(x)나 카테고리 y에서 x가 발생할 확률 P(x|y)를 명시적으로 계산한다.
+
+이 확률 정보를 이용하여 **새로운 샘플**을 생성할 수 있다.
+ 
+가령, 자연어 처리에서 한 단어(토큰)가 들어오면 다음에 올 적절한 토큰을 생성하는 언어 모델이 하나의 예시이다.
+
+생성모델의 한 예시로는 GAN(Generative Aadversarial Netwrok)이 있다.
+- 특정 사람의 필체를 흉내 낸 글씨를 생성하는 모델, 특정 양식의 그림을 생성하는 모델
+
+### Discriminative Model
+
+샘플의 카테고리만을 예측하는데 관심이 있는 모델로써, x라는 샘플이 있을 때 이 샘플의 카테고리가 y 일 확률, 즉 사후 확률 P(y|x)만을 추정하면 된다.
+
+가령, 카테고리가 4개 존재한다면 소프트맥스(softmax)의 경우와 같이 각 카테고리별 사후 확률인 P(y=1|x), P(y=2|x), P(y=3|x), P(y=4|x)를 구한 후, 사후 확률이 가장 높은 카테고리로 분류한다.
+
+예시로는, 특정 데이터의 카테고리를 분류하는 모델이 하나의 예시이다.
+
 </details>
 
 #### GAN
 <details markdown="1">
 <summary></summary>
-비지도학습에 사용되는 머신러닝 프레임워크의 한 종류로, 생성자와 구분자가 서로 대립하며(Adversarial:대립하는) 서로의 성능을 점차 개선해 나가는 쪽으로 학습이 진행되는 것이 주요 개념이다.
+
+![image](https://user-images.githubusercontent.com/39285147/181840182-63585580-4473-486c-851a-657f1627bfdd.png)
+
+**비지도학습**에 사용되는 머신러닝 프레임워크의 한 종류로, 생성자와 구분자가 **서로 대립하며(Adversarial:대립하는)** 서로의 성능을 점차 개선해 나가는 쪽으로 학습이 진행하여 **그럴 듯한 가짜를 만들어내는** 것이 주요 개념이다.
+
+Cost 함수로 **Discriminator Function**을 사용한다.
+
+> **Discriminator**: fake image = 0, real image = 1로 출력하도록 학습하느 과정으로, 생성자 구분자가 서로 번갈아가며 학습을 진행한다.
+
 </details>
 
 ****
