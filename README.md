@@ -162,6 +162,15 @@ etc. (무궁무진함)
 발견한 특징점을 기반으로 이미지를 분류하는 레이어 구간
 </details>
 
+#### RNN (TBD)
+<details markdown="1">
+<summary></summary>
+
+</details>
+
+
+#### [BERT vs. GPT](https://hchoi256.github.io/nlp/nlp-basic-transformer/)
+
 #### Batch and Epoch
 <details markdown="1">
 <summary></summary>
