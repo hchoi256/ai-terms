@@ -87,6 +87,8 @@ ROC 곡선은 Binary Classifier System에 대한 성능 평가 기법으로, 모
   - 적은 우리 데이터 + 많은 소스 데이터
 - 학습 시간 절약
 
+[reference](https://minimi22.tistory.com/31)
+
 </details>
 
 #### 강화학습
