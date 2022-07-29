@@ -162,9 +162,20 @@ etc. (무궁무진함)
 발견한 특징점을 기반으로 이미지를 분류하는 레이어 구간
 </details>
 
-#### RNN (TBD)
+#### RNN (순환신경망)
 <details markdown="1">
 <summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/181836934-d0c2970c-6048-4f9b-8a60-a31bbe7a901b.png)
+
+반복적이고 순차적인 데이터(Sequential data)학습에 특화된 인공신경망의 한 종류로써 내부의 **순환구조**가 들어있다는 특징을 가지고 있다.
+- 순환구조: 과거의 학습을 Weight를 현재 학습에 반영한다.
+
+기존의 *지속적이고 반복적이며 순차적인* 데이터학습의 한계를 해결하연 알고리즘이다 (= 중복되는 은닉층 겹겹이 쌓는 것 그만하고 순환시킨다).
+
+![image](https://user-images.githubusercontent.com/39285147/181836703-d90b20e1-a4a7-4ae8-b01f-1cf047775555.png)
+
+가령, 자연어 처리에서 주어인 'I'가 왔기 때문에 그 뒤는 동사일 것이라고 자연스럽게 예측했고, 전치사 'at'이 왔기 때문에 그 뒤는 명사가 올것이라고 추론하는 과정을 수학적으로 모델링한 것이 바로 RNN이다.
 
 </details>
 
