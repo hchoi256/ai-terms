@@ -228,17 +228,26 @@ Pooling
 
 </details>
 
-#### Zero-shot Learning
+#### Zero-shot vs. One-shot vs. Few-shot Learning
 <details markdown="1">
 <summary></summary>
 
-일반적으로 딥러닝은 training에 사용된 class만을 예측할 수 있다. 따라서 unseen data가 입력되면 seen class로 예측하는 바보가 되버리는데, Zero shot은 train set에 포함되지 않은 unseen class를 예측하는 분야이다.
+**Zero-shot**
+- 일반적으로 딥러닝은 training에 사용된 class만을 예측할 수 있다. 따라서 unseen data가 입력되면 seen class로 예측하는 바보가 되버리는데, Zero shot은 train set에 포함되지 않은 unseen class를 예측하는 분야이다.
+  - Unseen data를 입력 받아도, seen data로 학습된 지식을 전이하여 unseen data를 unseen class로 예측할 수 있다.
+- 모델이 바로 downstream task에 적용한다.
 
-즉, unseen data를 입력 받아도, seen data로 학습된 지식을 전이하여 unseen data를 unseen class로 예측할 수 있다.
+> **CV**: 클래스 레이블 간의 표현 유사성에 의존
+>
+> **NLP**: 동일한 의미적 공간에서의 레이블을 나타내는 '라벨 이해' 기능 기반
 
-- **CV**: 클래스 레이블 간의 표현 유사성에 의존
 
-- **NLP**: 동일한 의미적 공간에서의 레이블을 나타내는 '라벨 이해' 기능 기반
+**One-shot**
+- 모델을 1건의 데이터에 맞게 업데이트한다.
+- 보통의 얼굴 인식 시스템은 사용자의 사진이 한 장만 존재할 수도 있기 때문이다.
+
+**Few-shot**
+- 모델을 몇 건의 데이터에 맞게 업데이트한다
 
 </details>
 
