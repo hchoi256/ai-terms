@@ -32,3 +32,6 @@
 - **딥러닝**
   - Recurrent Neural Network (RNN)
   - Long Short-Term Memory (LSTM)
+
+# Reference
+https://min23th.tistory.com/4?category=954545
