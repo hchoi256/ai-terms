@@ -10,6 +10,30 @@
 차원이 증가하면서 학습데이터 수가 차원 수보다 적어져서 성능이 저하되는 현상이다.
 </details>
 
+#### Activation Function의 종류 세 가지
+<details markdown="1">
+<summary></summary>
+
+활성화함수란 입력 신호의 총합을 출력 신호로 변환하는 함수로, 입력 받은 신호를 얼마나 출력할지 결정하고 Network에 층을 쌓아 비선형성을 표현할 수 있다. 
+
+#### Ridge activation Function
+Multivariate functions acting on a linear combination of the input variable
+- Linear
+- ReLU
+- Logistic
+
+#### Radial activation Function(원형기준함수)
+![image](https://user-images.githubusercontent.com/39285147/182003709-d319e437-6250-4edd-97e7-c473864edc86.png)
+
+평균과 분산을 가지는 정규분포의 데이터의 분포를 근사한다. kernel function을 사용하여 비선형적인 데이터 분포에 대한 처리가 가능하며, MLP보다 학습이 빠르다
+- Gaussian
+
+#### Folding activation Function
+Folding activation functions are extensively used in the pooling layers in convolutional neural networks, and in output layers of multiclass classification networks
+- Softmax
+
+</details>
+
 #### Decision Theory (의사결정)
 <details markdown="1">
 <summary></summary>
