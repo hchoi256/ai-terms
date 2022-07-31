@@ -196,6 +196,8 @@ Cost 함수로 **Discriminator Function**을 사용한다.
 
 ![image](https://user-images.githubusercontent.com/39285147/181836934-d0c2970c-6048-4f9b-8a60-a31bbe7a901b.png)
 
+RNN은 히든 노드가 방향을 가진 엣지로 연결되어 순환 구조를 이루는 인공신경망의 한 구조이다.
+
 반복적이고 순차적인 데이터(Sequential data)학습에 특화된 인공신경망의 한 종류로써 내부의 **순환구조**가 들어있다는 특징을 가지고 있다.
 - 순환구조: 과거의 학습을 Weight를 현재 학습에 반영한다.
 
