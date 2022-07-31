@@ -300,14 +300,18 @@ whitening을 하게되면 이전 레이어로부터 학습이 가능한 paramete
 
 </details>
 
-#### Batch Normalization
+#### Batch Normalization vs. Layer Normarlization
 <details markdown="1">
 
+#### Batch normalization
 ![image](https://user-images.githubusercontent.com/39285147/182007608-a8c03859-9a8a-451b-bf39-4ebc9876fdc0.png)
 
-입력 데이터에 대하여 각 차원(feature)별로 mini-batch를 만들어 그 평균과 분산을 계산하는 normalization을 수행한다.
+CNN에 많이 사용하는 기법으로, 입력 데이터에 대하여 각 차원(feature)별로 mini-batch를 만들어 그 평균과 분산을 계산하는 normalization을 수행한다.
 
 BN은 학습 가능한 parameters가 존재하는 하나의 레이어 구조가 되며 이 기법이 발표된 이후 기존의 딥러닝 구조에서 Convolution Layer와 Activation Layer 사이에 BN Layer가 들어간 형태로 발전했다.
+
+#### Layer normalization
+RNN에 많이 사용하는 기법이다.
 
 <summary></summary>
 </details>
