@@ -188,7 +188,7 @@ Cost 함수로 **Discriminator Function**을 사용한다.
 이미지에서 feature를 뽑기위해 사용하는 합성곱 연산 과정이다.
 </details>
 
-#### [ANN vs. CNN](https://github.com/hchoi256/ai-boot-camp/blob/main/ai/deep-learning/cnn.md)
+#### [ANN vs. CNN](https://github.com/hchoi256/ai-boot-camp/tree/main/ai/deep-learning)
 
 #### RNN (순환신경망)
 <details markdown="1">
