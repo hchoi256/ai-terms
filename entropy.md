@@ -18,6 +18,8 @@
 ![image](https://user-images.githubusercontent.com/39285147/178137861-a4cb7cb9-1fa0-49f1-967e-957263307c12.png)
 ![image](https://user-images.githubusercontent.com/39285147/179909361-82b8a376-69c9-4669-a564-5b47aecdf122.png)
 
+두 확률 분포의 차이를 구하기 위해서 사용된다.
+
 Cross entropy는 분류 작업에 사용되며 회귀에 주로 사용되는 잔차 제곱보다 더 나은 성능을 제공한다.
 
 분포확률(p)을 모르는 경우, 예측(p) 및 실제확률(q)의 차이인 크로스 엔트로피로 설명 가능하다.
