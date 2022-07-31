@@ -3,7 +3,7 @@
 #### [Entropy, KL Divergence](https://github.com/hchoi256/ai-terms/blob/main/entropy.md)
 
 #### [시계열 분석](https://github.com/hchoi256/ai-terms/blob/main/time-series-analysis.md)
-#### [Overfitting](https://github.com/hchoi256/ai-terms/blob/main/overfitting.md)
+#### [Overfitting & How to Avoid Overfitting](https://github.com/hchoi256/ai-terms/blob/main/overfitting.md)
 #### 차원의 저주
 <details markdown="1">
 <summary></summary>
@@ -236,7 +236,7 @@ Softmax - 다중분류
 Sigmoid - 이진분류
 </details>
 
-#### 모델 일반화 성능 개선 방법
+#### 모델 일반화(Model Generalization) 성능 개선 방법
 <details markdown="1">
 <summary></summary>
 새로운 데이터
@@ -247,7 +247,67 @@ etc. (무궁무진함)
 
 </details>
 
-#### [Gradient Descent and Stocastic Gradient Descent](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/gradient-discent.md)
+
+#### Internal Covariate Shift
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/182007099-62500132-26ad-4440-bc98-0e200225f89d.png)
+
+**Covariate shift(공변량 변화)**는 공변량 변화라고 부르며 입력 데이터의 분포가 학습할 때와 테스트할 때 다르게 나타나는 현상을 말한다.
+
+**Internal Covariate Shift**는 매 스텝마다 hidden layer에 입력으로 들어오는 데이터의 분포가 달라지는 것을 의미하며 Internal Covariate Shift는 layer가 깊을수록 심화될 수 있다.
+
+역전파의 가중치 업데이트 과정에서 ReLU나 규제화, 학습률을 낮추는 등의 방법으로도 레이어 수가 많아질수록 학습이 잘 되지않는 근본적인 문제점이 존재했다.
+
+이러한 근본적 문제가 바로 Internal Covraite Shift이며, 이는 [**Batch Normalization*](#Batch-Normalization) 기법으로 해결 가능하다.
+
+</details>
+
+#### Normalization, Whitening
+<details markdown="1">
+<summary></summary>
+
+#### Normalization
+![image](https://user-images.githubusercontent.com/39285147/182007273-ff44427f-4bdf-4b7a-8237-27c3dfd16964.png)
+
+데이터를 동일한 범위 내의 값을 갖도록 하는 기법으로 대표적으로 Min-Max, Standardization이 있다. 이 중에서 Standardization은 데이터를 평균 0, 표준편차 1이 되게 변환하여 정규화시킨다.
+
+#### Whitening
+![image](https://user-images.githubusercontent.com/39285147/182007309-fdc73544-4902-4661-8191-bdc8aed4f2e4.png)
+
+데이터의 평균을 0, 그리고 공분산을 단위행렬로 갖는 정규분포 형태로 PCA를 사용하여 변환하는 기법이다.
+
+### 한계
+whitening을 하게되면 이전 레이어로부터 학습이 가능한 parameters의 영향을 무시한다.
+
+따라서, [**Batch Normalization*](#Batch-Normalization) 방법이 필요하다.
+
+</details>
+
+#### Batch Normalization
+<details markdown="1">
+
+![image](https://user-images.githubusercontent.com/39285147/182007608-a8c03859-9a8a-451b-bf39-4ebc9876fdc0.png)
+
+입력 데이터에 대하여 각 차원(feature)별로 mini-batch를 만들어 그 평균과 분산을 계산하는 normalization을 수행한다.
+
+BN은 학습 가능한 parameters가 존재하는 하나의 레이어 구조가 되며 이 기법이 발표된 이후 기존의 딥러닝 구조에서 Convolution Layer와 Activation Layer 사이에 BN Layer가 들어간 형태로 발전했다.
+
+<summary></summary>
+</details>
+
+#### [Support Vector Machine & Margin 최대화 이유?](https://github.com/hchoi256/ai-boot-camp/blob/main/ai/machine-learning/supervised-learning/classification/svm.md)
+
+#### [Optimizer](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/gradient-discent.md)
+
+#### [Gradient Descent & Stocastic Gradient Descent](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/gradient-discent.md)
+
+#### Local Optima에 빠져도 딥러닝 학습에 긍정적인 이유?
+<details markdown="1">
+<summary></summary>
+실제 딥러닝에서 로컬 옵티마 빠질 확률이 거의 없으며, 실제 딥러닝 모델에서는 수많은 w(가중치)가 존재하여 모든 가중치가 모두 로컬 옵티마라도 빠져서 가중치 업데이트가 종료되야 학습이 종료되기 때문이다.
+</details>
 
 #### [Ensemble](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/ensemble.md)
 
@@ -584,6 +644,22 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 ![image](https://user-images.githubusercontent.com/39285147/180647570-40aff0f1-6267-4236-8c25-b0226710069d.png)
 
+1. TP (True Positive): 양성(긍정적 결과)이라고 예측한 것이 정답일 때
+- 즉 실제로 Positive인 것을 잘 맞췄음
+
+2. TN (True Negative): 음성(부정적 결과)이라고 예측한 것이 정답일 때
+- 즉 실제로 Negative인 것을 잘 맞췄음
+
+3. FP (False Positive): 양성(긍정적 결과)이라고 예측한 것이 오답일 때
+- 즉 실제 Negative인 것을 Positive로 예측해서 틀렸음
+
+4. FN (False Negative): 음성(부정적 결과)이라고 예측한 것이 오답일 때
+- 즉 실제 Positive인 것을 Negative로 예측해서 틀렸음
+
+**Precision Recall Curve**
+![image](https://user-images.githubusercontent.com/39285147/182006764-339fc132-96c4-4201-854a-f4513df2b3d5.png)
+
+- x축을 recall, y축을 precision으로 하는 커브를 의미한다.
 </details>
 
 #### Frequentist vs. Beyas vs. Naive Beyas(나이브 베이스)
