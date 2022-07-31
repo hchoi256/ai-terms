@@ -23,6 +23,7 @@ Multivariate functions acting on a linear combination of the input variable
 - Logistic
 
 ### 2. Radial activation Function(원형기준함수)
+
 ![image](https://user-images.githubusercontent.com/39285147/182003709-d319e437-6250-4edd-97e7-c473864edc86.png)
 
 평균과 분산을 가지는 정규분포의 데이터의 분포를 근사한다. kernel function을 사용하여 비선형적인 데이터 분포에 대한 처리가 가능하며, MLP보다 학습이 빠르다
