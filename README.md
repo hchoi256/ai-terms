@@ -1,4 +1,4 @@
-tep
+
 ****
 # *Machine Learning*
 #### [Entropy, KL Divergence](https://github.com/hchoi256/ai-terms/blob/main/entropy.md)
