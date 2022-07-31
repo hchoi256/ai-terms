@@ -528,7 +528,7 @@ pdf를 통해 표현 가능하며, 확률 변수가 가질 수 있는 값이 셀
 
 *Chi-squared*(카이제곱분포): 감마분포의 특수한 경우로 (α=p/2,β=2), 두 범주형 변수에 대한 분석 방법이다. 카이제곱분포는 분산의 특징을 확률분포로 만든 것이므로 집단의 분산을 추정하고 검정할 때 많이 사용된다. 보통 0에서 시작되는 positively skewed 형태의 분포모양을 띄는데, 이는 0에서 멀어질수록 분산의 크기가 큰 경우(가령 키 차이가 50cm 이상 나는 경우)가 적다는 의미이다. 
 
-*Betea*(베타분포): 두 매개변수 α 와 β 에 따라 [0, 1] 구간에서 정의 되는 **단일** 확률변수에 대한 연속확률분포이다.
+*Beta*(베타분포): 두 매개변수 α 와 β 에 따라 [0, 1] 구간에서 정의 되는 **단일** 확률변수에 대한 연속확률분포이다.
 
 *Dirichlet*(디리클레분포): 두 매개변수 α 와 β 에 따라 [0, 1] 구간에서 정의 되는 **다변수** 확률변수에 대한 연속확률분포이다.
 
@@ -566,6 +566,66 @@ pdf를 통해 표현 가능하며, 확률 변수가 가질 수 있는 값이 셀
 
 </details>
 
+#### Confidence Interval(신뢰구간)
+<details markdown="1">
+<summary></summary>
+모수가 속할 것으로 기대되는 범위 (모수를 포함할 것으로 추정한 구간)
+</details>
+
+#### covariance(공분산)/correlation(상관계수)
+<details markdown="1">
+<summary></summary>
+
+**공분산**: 두 개의 확률변수의 상관정도(**어떻게** 퍼져있는지)를 나타내는 값이다 [-1, 1]. 공분산의 크기는 두 확률변수의 scale에 크게 영향을 받는다.
+
+**상관관계**: 두 변수 간에 선형 관계의 정도를 수량화하는 측도이다. 이때 두 변수간의 관계의 강도를 상관계수(correlation coefficient)라고 한다. 만약, 상관계수가 0이면 두 확률변수는 아무런 선형 상관관계를 갖지 않는다; 양의 선형관계면 1, 음의 선형관계면 -1
+
+공분산 vs. 상관관계
+- 공분산: 상관 정도의 절대적인 크기를 측정 X
+- 상관관계: 상관 정도의 절대적인 크기를 측정 O
+
+</details>
+
+#### Total Variance
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/182010388-60cf7098-0c6e-4bc1-b243-cb7c4ff0cd98.png)
+
+두 확률 분포의 측정값이 벌어질 수 있는 가장 큰 값이다.
+
+</details>
+
+#### Explained variation(설명분산) vs Uexplained variation(설명되지 않는 분산)
+<details markdown="1">
+<summary></summary>
+
+#### Explained variation(설명분산)
+통계에서 설명분산은 수학적 모델이 주어진 데이터 세트의 변동(분산)을 설명하는 비율을 측정한다.
+
+**잔차제곱** = 1 – (Sum of Squared Residuals / Total Variance)
+
+**Explained Variance Score** = 1 – ( (Sum of Squared Residuals – Mean Error) / Total Variance )
+
+결정계수(=R제곱)와의 유일한 차이는 SSR에 Mean Error를 빼는 것으로, 모델 학습에 편향성이 존재할 경우 Mean Error가 0이 아닌 값을 가지게 된다.
+
+이 경우, 결정계수과 설명분산점수의 값이 달라지게 되어 편향성 유무를 판별할 수 있다.
+
+일반적으로, 회귀분석과 같은 것들은 잔차에 편향이 없다는 전제로 수행되기에 설명분산점수를 따지지 않는다.
+
+#### Uexplained variation(설명되지 않는 분산)
+
+Unexplained variance는 분산 분석 (ANOVA)에 사용되는 용어로, ANOVA는 다른 그룹의 평균을 비교하는 통계적 방법이다.
+
+The sum of the squared of the differences between the y-value of each ordered pair and each corresponding predicted y-value
+
+</details>
+
+#### Confidence Interval(신뢰구간)
+<details markdown="1">
+<summary></summary>
+모수가 속할 것으로 기대되는 범위 (모수를 포함할 것으로 추정한 구간)
+</details>
 
 #### Normalization vs. Standardization
 <details markdown="1">
@@ -608,20 +668,6 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 **2. 자유도 (Degree of Freedom)**
 
 분산은 편차 제곱의 평균이므로, 표본평균을 알고 있다는 전제로 도출할 수 있는 값이다. 따라서, 편차 제곱의 평균을 구할 때 분모에 N 대신 N-1을 사용하면, 우리는 표본평균을 알고있기 때문에 마지막 추정값을 더 나은 통계치 도출을 위해 자유롭게 제외할 수 있다. 이를 토대로, 우리는 표본분산의 자유도가 N-1임을 알 수 있다.
-
-</details>
-
-#### 상관관계와 공분산
-<details markdown="1">
-<summary></summary>
-
-*공분산*: 두 개의 확률변수의 상관정도를 나타내는 값이다 [-1, 1]. 공분산의 크기는 두 확률변수의 scale에 크게 영향을 받는다.
-
-*상관관계*: 두 변수 간에 선형 관계의 정도를 수량화하는 측도이다. 이때 두 변수간의 관계의 강도를 상관계수(correlation coefficient)라고 한다. 만약, 상관계수가 0이면 두 확률변수는 아무런 선형 상관관계를 갖지 않는다.
-
-공분산 vs. 상관관계
-- 공분산: 상관 정도의 절대적인 크기를 측정 X
-- 상관관계: 상관 정도의 절대적인 크기를 측정 O
 
 </details>
 
