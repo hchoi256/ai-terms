@@ -32,6 +32,7 @@
 - **딥러닝**
   - Recurrent Neural Network (RNN)
   - Long Short-Term Memory (LSTM)
+  - [ARIMA](https://byeongkijeong.github.io/ARIMA-with-Python/)
 
 # Reference
 https://min23th.tistory.com/4?category=954545
