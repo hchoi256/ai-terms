@@ -32,6 +32,7 @@
 - **딥러닝**
   - Recurrent Neural Network (RNN)
   - Long Short-Term Memory (LSTM)
+    - 미세먼지 농도 예측 알고리즘, etc.
   - [ARIMA](https://byeongkijeong.github.io/ARIMA-with-Python/)
 
 # Reference
