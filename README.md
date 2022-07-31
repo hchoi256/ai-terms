@@ -29,8 +29,20 @@ Multivariate functions acting on a linear combination of the input variable
 - Gaussian
 
 #### Folding activation Function
-Folding activation functions are extensively used in the pooling layers in convolutional neural networks, and in output layers of multiclass classification networks
+Folding activation functions are extensively used in the pooling layers in convolutional neural networks, and in output layers of multiclass classification networks. These activations perform aggregation over the inputs, such as taking the mean, minimum or maximum. In multiclass classification the softmax activation is often used.
 - Softmax
+
+</details>
+
+#### Netwon's method
+<details markdown="1">
+<summary></summary>
+값을 계속 대입하여 함수값을 0(f(x) = 0인 x)으로 만들어주는 값인 해를 구하는 방법 중 하나이다.
+
+현재 x값에서 접선을 그리고 접선이 x축과 만나는 지점으로 x를 이동시켜 가면서 점진적으로 해를 찾는 방법이다.
+
+2차 방정식의 인수분해와 비슷해보이지만, 7차 방정식의 경우 인수분해가 어려워, 뉴턴법을 사용한다.
+
 
 </details>
 
@@ -175,6 +187,25 @@ Cost 함수로 **Discriminator Function**을 사용한다.
 이미지에서 feature를 뽑기위해 사용하는 합성곱 연산 과정이다.
 </details>
 
+#### [ANN vs. CNN](https://github.com/hchoi256/ai-boot-camp/blob/main/ai/deep-learning/cnn.md)
+
+#### RNN (순환신경망)
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/181836934-d0c2970c-6048-4f9b-8a60-a31bbe7a901b.png)
+
+반복적이고 순차적인 데이터(Sequential data)학습에 특화된 인공신경망의 한 종류로써 내부의 **순환구조**가 들어있다는 특징을 가지고 있다.
+- 순환구조: 과거의 학습을 Weight를 현재 학습에 반영한다.
+
+기존의 *지속적이고 반복적이며 순차적인* 데이터학습의 한계를 해결하연 알고리즘이다 (= 중복되는 은닉층 겹겹이 쌓는 것 그만하고 순환시킨다).
+
+![image](https://user-images.githubusercontent.com/39285147/181836703-d90b20e1-a4a7-4ae8-b01f-1cf047775555.png)
+
+가령, 자연어 처리에서 주어인 'I'가 왔기 때문에 그 뒤는 동사일 것이라고 자연스럽게 예측했고, 전치사 'at'이 왔기 때문에 그 뒤는 명사가 올것이라고 추론하는 과정을 수학적으로 모델링한 것이 바로 RNN이다.
+
+</details>
+
 #### TensorFlow vs. PyTorch vs. Keras
 <details markdown="1">
 <summary></summary>
@@ -225,24 +256,6 @@ etc. (무궁무진함)
 <summary></summary>
 발견한 특징점을 기반으로 이미지를 분류하는 레이어 구간
 </details>
-
-#### RNN (순환신경망)
-<details markdown="1">
-<summary></summary>
-
-![image](https://user-images.githubusercontent.com/39285147/181836934-d0c2970c-6048-4f9b-8a60-a31bbe7a901b.png)
-
-반복적이고 순차적인 데이터(Sequential data)학습에 특화된 인공신경망의 한 종류로써 내부의 **순환구조**가 들어있다는 특징을 가지고 있다.
-- 순환구조: 과거의 학습을 Weight를 현재 학습에 반영한다.
-
-기존의 *지속적이고 반복적이며 순차적인* 데이터학습의 한계를 해결하연 알고리즘이다 (= 중복되는 은닉층 겹겹이 쌓는 것 그만하고 순환시킨다).
-
-![image](https://user-images.githubusercontent.com/39285147/181836703-d90b20e1-a4a7-4ae8-b01f-1cf047775555.png)
-
-가령, 자연어 처리에서 주어인 'I'가 왔기 때문에 그 뒤는 동사일 것이라고 자연스럽게 예측했고, 전치사 'at'이 왔기 때문에 그 뒤는 명사가 올것이라고 추론하는 과정을 수학적으로 모델링한 것이 바로 RNN이다.
-
-</details>
-
 
 #### [BERT vs. GPT](https://hchoi256.github.io/nlp/nlp-basic-transformer/)
 
