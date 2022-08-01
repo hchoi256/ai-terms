@@ -38,6 +38,7 @@ Folding activation functions are extensively used in the pooling layers in convo
 #### Netwon's method
 <details markdown="1">
 <summary></summary>
+
 값을 계속 대입하여 함수값을 0(f(x) = 0인 x)으로 만들어주는 값인 해를 구하는 방법 중 하나이다.
 
 현재 x값에서 접선을 그리고 접선이 x축과 만나는 지점으로 x를 이동시켜 가면서 점진적으로 해를 찾는 방법이다.
@@ -50,6 +51,7 @@ Folding activation functions are extensively used in the pooling layers in convo
 #### Decision Theory (의사결정)
 <details markdown="1">
 <summary></summary>
+
 불확실성에 직면하여 결정을 내리지 않으면 안 될 경우, 어떤 결정을 해야할 것이며, 또 어떤 정보를 어떻게 이용해야 하는가에 관한 문제에 답하려는 통계적 결정이론이다.
 
 기대효용이 최대가 되도록 결정하는 것을 '연역'이라 일컫는다. 결정자에게 불확실성 하에서 합리적이고 가장 적절한 결정을 도출하는 것이다.
@@ -66,11 +68,13 @@ Naive Beyas 정리를 토대로 사전확률을 통한 사후확률 도출이라
 ![image](https://user-images.githubusercontent.com/39285147/180647724-6bd69d98-6ae4-46f5-b28c-255d5acc95dd.png)
 
 ROC 곡선은 Binary Classifier System에 대한 성능 평가 기법으로, 모델이 맞게 예측한 TP를 y축으로 틀리게 예측한 FP를 x축으로 하여 도표를 그린다.
+
 </details>
 
 #### Semi-Supervised Learning
 <details markdown="1">
 <summary></summary>
+
 준지도학습은 소량의 labeled data에는ㄴ supervised learning을 활용하고, 소량의 unlabeled data 혹은 대용량 unalbeled data에 대하여 unsupervised learning을 적용해 추가적인 성능 향상을 목표로 한다.
 
 기존 지도학습의 label 종속성에서 다소 벗어나 '데이터 자체의 본질적인 특성'을 모델링하여 소량의 labeled data를 통한 약간의 가이드로 일반화 성능을 끌어올린다.
@@ -112,6 +116,7 @@ ROC 곡선은 Binary Classifier System에 대한 성능 평가 기법으로, 모
 #### 전이학습(Transfer Learning)
 <details markdown="1">
 <summary></summary>
+
 전이 학습(Transfer Learning)은 특정 분야에서 학습된 신경망의 일부 능력을 유사하거나 전혀 새로운 분야에서 사용되는 신경망의 학습에 이용하는 것을 의미한다.
 
 전이 학습을 통해서 더 많은 지식을 얻음으로써 성능도 향상시키고 학습 속도도 빠르게 만들 수 있다.
@@ -238,27 +243,32 @@ PyTorch
 #### 신경망 학습에서 '정확도'가 아닌 '손실함수' 사용 이유?
 <details markdown="1">
 <summary></summary>
+
 최적의 매개변수(가중치와 편향)을 탐색할 때 손실함수에서는 미분을 통하여 손실함수의 값을 작게하는 매개변수를 탐색하지만, 정확도를 지표로 삼는 경우 그 미분값이 대부분의 장소에서 0이 되므로 매개변수 갱신이 어렵다.
 
 손실함수의 예로는 **평균제곱오차(회귀), 크로스 엔트로피(분류)** 등이 있다.
+
 </details>
 
 #### Softmax vs. Sigmoid (분류)
 <details markdown="1">
 <summary></summary>
+
 Softmax - 다중분류
 
 Sigmoid - 이진분류
+
 </details>
 
 #### 모델 일반화(Model Generalization) 성능 개선 방법
 <details markdown="1">
 <summary></summary>
-새로운 데이터
 
-이미지 확대, 증대, 회전, 밝기 조절, etc.
+1. 새로운 데이터
 
-etc. (무궁무진함)
+2. 이미지 확대, 증대, 회전, 밝기 조절, etc.
+
+3. etc. (무궁무진함)
 
 </details>
 
@@ -311,6 +321,7 @@ CNN에 많이 사용하는 기법으로, 입력 데이터에 대하여 각 차�
 BN은 학습 가능한 parameters가 존재하는 하나의 레이어 구조가 되며 이 기법이 발표된 이후 기존의 딥러닝 구조에서 Convolution Layer와 Activation Layer 사이에 BN Layer가 들어간 형태로 발전했다.
 
 #### Layer normalization
+
 RNN에 많이 사용하는 기법이다.
 
 <summary></summary>
@@ -325,7 +336,9 @@ RNN에 많이 사용하는 기법이다.
 #### Local Optima에 빠져도 딥러닝 학습에 긍정적인 이유?
 <details markdown="1">
 <summary></summary>
+
 실제 딥러닝에서 로컬 옵티마 빠질 확률이 거의 없으며, 실제 딥러닝 모델에서는 수많은 w(가중치)가 존재하여 모든 가중치가 모두 로컬 옵티마라도 빠져서 가중치 업데이트가 종료되야 학습이 종료되기 때문이다.
+
 </details>
 
 #### [Ensemble](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/ensemble.md)
@@ -333,7 +346,9 @@ RNN에 많이 사용하는 기법이다.
 #### Fully Connected Layer(= hidden layer)
 <details markdown="1">
 <summary></summary>
+
 발견한 특징점을 기반으로 이미지를 분류하는 레이어 구간
+
 </details>
 
 #### [BERT vs. GPT](https://hchoi256.github.io/nlp/nlp-basic-transformer/)
@@ -349,25 +364,30 @@ RNN에 많이 사용하는 기법이다.
 - Batch 사이즈 ↓, 적은 샘플을 참조해서 가중치 업데이트가 빈번하게 일어나기 때문에, 비교적 *불안정하게* 훈련될 수도 있습니다.
 
 **Epoch**: 딥러닝에서는 epoch은 전체 트레이닝 셋이 신경망을 통과한 횟수이다. 가령, 1-epoch는 전체 트레인이 셋이 하나의 신경망에 적용되어 순전파와 역전파를 통해 신경망을 한 번 통과했다는 것을 의미한다.
+
 </details>
 
 #### Gradient Vanishing/Exploding/Clipping
 <details markdown="1">
 <summary></summary>
+
 **Gradient Vanishing**: 역전파 과정에서 입력층으로 갈 수록 기울기(Gradient)가 점차적으로 작아지는 현상 (시그모이드 대신 ReLU 사용)
 
 **Gradient Exploding**: 기울기가 점차 커지더니 가중치들이 비정상적으로 큰 값이 되면서 결국 발산된다.
 
-**Gradient Clipping**: 기울기 폭주를 막기 위해 임계값을 넘지 않도록 값을 자른다. 
+**Gradient Clipping**: 기울기 폭주를 막기 위해 임계값을 넘지 않도록 값을 자른다.
+
 </details>
 
 #### Padding, Stride, Pooling
 <details markdown="1">
+
 Padding: ( n - f + 1 ) x ( n - f + 1 )
 - edge 부분 픽셀은 한 번만 사용되어 윤곽 정보 소실을 방지한다.
 - 이미지 축소를 방지한다
 
 Stride
+
 ![image](https://user-images.githubusercontent.com/39285147/179364041-af7c8918-1e2b-49a2-b8d1-147b1b3aff8b.png)
 
 - 필터 적용시 이동 간격
@@ -421,7 +441,9 @@ Pooling
 #### Black box
 <details markdown="1">
 <summary></summary>
+
 Black box란 결과는 인간과 유사하게 또는 원하는대로 도출할 수 있지만 어떻게, 무엇을 근거로 그러한 결과가 나왔는지 알 수 없는 것
+
 </details>
 
 #### GAP vs GMP
@@ -439,6 +461,7 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 - GAP는 FC Layer와 달리 연산이 필요한 파라미터 수를 크게 줄일 수 있다
   - Regulariztion과 유사한 동작을 통해 overfitting을 방지할 수 있다.
 - FC layer는 Convolution layer에서 유지하던 위치정보가 손실되는 반면, GAP layer는 위치정보를 담고 있기 때문에 localization에 유리하다.
+
 <summary></summary>
 </details>
 
@@ -454,6 +477,7 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 
 #### Back Propagation
 <details markdown="1">
+
 역전파 알고리즘은 출력값에 대한 입력값의 기울기(미분값)을 출력층 layer에서부터 계산하여 거꾸로 전파시키는 것이다.
 
 전 layer들에서의 기울기와 서로 곱하는 형식으로 나아가면서 최종적으로 출력층에서의 output값에 대한 입력층에서의 input data의 기울기 값을 구할 수 있다.
