@@ -529,6 +529,38 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 
 </details>
 
+#### Total variation distance
+<details markdown="1">
+<summary></summary>
+
+</details>
+
+#### P-value (유의확률)
+<details markdown="1">
+<summary></summary>
+
+검정 통계량 값에 대해 **귀무가설을 기각할 수 있는 최소의 *유의 수준***(제 1종 오류 (α)를 범할 확률의 최대 허용한계).
+
+즉, 귀무가설이 사실일 확률이다.
+
+α(0.05) > p-value: H0 기각
+
+α(0.05) < p-value: H0 채택
+
+</details>
+
+#### likelihood-ratio test(우도비검정)
+<details markdown="1">
+<summary></summary>
+
+모형 두 개의 우도(가능성 확률)의 비를 계산해서 두 모형의 우도가 유의하게 차이 나는지 비교하는 방법이다.
+
+![image](https://user-images.githubusercontent.com/39285147/182451753-37b3b932-18d1-4f8a-801d-4d735a5360a9.png)
+
+가령, 모형 B에 '비만'이라는 독립변수를 추가한 후 우도비 검정 결과에서 두 모형의 우도의 비 차이가 있다면, '비만'의 회귀계수는 통계적으로 유의미하다.
+
+</details>
+
 #### pmf vs. pdf vs. cdf
 <details markdown="1">
 <summary></summary>
@@ -623,7 +655,7 @@ pdf를 통해 표현 가능하며, 확률 변수가 가질 수 있는 값이 셀
 모수가 속할 것으로 기대되는 범위 (모수를 포함할 것으로 추정한 구간)
 </details>
 
-#### covariance(공분산)/correlation(상관계수)
+#### covariance(공분산)/correlation(상관계수) vs. 결정계수
 <details markdown="1">
 <summary></summary>
 
@@ -631,9 +663,18 @@ pdf를 통해 표현 가능하며, 확률 변수가 가질 수 있는 값이 셀
 
 **상관관계**: 두 변수 간에 선형 관계의 정도를 수량화하는 측도이다. 이때 두 변수간의 관계의 강도를 상관계수(correlation coefficient)라고 한다. 만약, 상관계수가 0이면 두 확률변수는 아무런 선형 상관관계를 갖지 않는다; 양의 선형관계면 1, 음의 선형관계면 -1
 
-공분산 vs. 상관관계
+**Coefficient of determination(결정계수)**
+- 회귀선에 의해 설명되는 회귀모형의 설명력으로, [0, 1] 범위를 가진다.
+- 만약, 회귀선에 모든 점들이 존재한다면 1에 가까운 결정계수를 갖고, 반대로 변수들간 회귀관계가 없다면 0에 가깝다.
+
+
+1. 공분산 vs. 상관관계
 - 공분산: 상관 정도의 절대적인 크기를 측정 X
 - 상관관계: 상관 정도의 절대적인 크기를 측정 O
+
+2. 상관계수 vs. 결정계수
+- 단순회귀에 한하여 결정계수의 제곱근 = 상관계수
+  - 다중회귀/곡선회귀는 해당사항 없음.
 
 </details>
 
@@ -653,7 +694,9 @@ pdf를 통해 표현 가능하며, 확률 변수가 가질 수 있는 값이 셀
 
 ![image](https://user-images.githubusercontent.com/39285147/182449120-e1387451-ebc3-4f70-8f5d-ce25aa99c65e.png)
 
-#### Explained variation(설명분산)
+> SST(총변동) = SSR + SSE
+
+#### Explained variation(설명분산) - SSR
 
 **Explained Variance Score** = 1 – ( (Sum of Squared Residuals – Mean Error) / Total Variance )
 
@@ -665,7 +708,7 @@ pdf를 통해 표현 가능하며, 확률 변수가 가질 수 있는 값이 셀
 
 일반적으로, 회귀분석과 같은 것들은 잔차에 편향이 없다는 전제로 수행되기에 설명분산점수를 따지지 않는다.
 
-#### Uexplained variation(설명되지 않는 분산)
+#### Uexplained variation(설명되지 않는 분산) - SSE
 
 **잔차제곱** = 1 – (Sum of Squared Residuals / Total Variance)
 
