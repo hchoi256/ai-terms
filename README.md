@@ -343,6 +343,8 @@ RNN에 많이 사용하는 기법이다.
 
 #### [Ensemble (Bagging vs. Boosting)](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/ensemble.md)
 
+#### [AdaBoost / Logit Boost / Gradient Boost]()
+
 #### Fully Connected Layer(= hidden layer)
 <details markdown="1">
 <summary></summary>
