@@ -341,7 +341,7 @@ RNN에 많이 사용하는 기법이다.
 
 </details>
 
-#### [Ensemble](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/ensemble.md)
+#### [Ensemble (Bagging vs. Boosting)](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/ensemble.md)
 
 #### Fully Connected Layer(= hidden layer)
 <details markdown="1">
