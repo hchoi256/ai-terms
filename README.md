@@ -2,6 +2,12 @@
 # *Machine Learning*
 #### [Entropy, KL Divergence](https://github.com/hchoi256/ai-terms/blob/main/entropy.md)
 
+#### Mutual Information(상호정보량)
+<details markdown="1">
+<summary></summary>
+두 개의 확률변수 사이의 상호정보량(mutual information)은 하나의 확률변수가 다른 하나의 확률변수에 대해 제공하는 정보의 양을 의미합니다.
+</details>
+
 #### [시계열 분석](https://github.com/hchoi256/ai-terms/blob/main/time-series-analysis.md)
 #### [Overfitting & How to Avoid Overfitting](https://github.com/hchoi256/ai-terms/blob/main/overfitting.md)
 #### 차원의 저주
@@ -645,12 +651,13 @@ pdf를 통해 표현 가능하며, 확률 변수가 가질 수 있는 값이 셀
 <details markdown="1">
 <summary></summary>
 
-#### Explained variation(설명분산)
-통계에서 설명분산은 수학적 모델이 주어진 데이터 세트의 변동(분산)을 설명하는 비율을 측정한다.
+![image](https://user-images.githubusercontent.com/39285147/182449120-e1387451-ebc3-4f70-8f5d-ce25aa99c65e.png)
 
-**잔차제곱** = 1 – (Sum of Squared Residuals / Total Variance)
+#### Explained variation(설명분산)
 
 **Explained Variance Score** = 1 – ( (Sum of Squared Residuals – Mean Error) / Total Variance )
+
+상기 그림에서 녹색 부분(|predicted - mu|)에 해당하는 부분으로 수학적으로 계산 가능한 변동(분산)을 설명하는 비율을 측정한다
 
 결정계수(=R제곱)와의 유일한 차이는 SSR에 Mean Error를 빼는 것으로, 모델 학습에 편향성이 존재할 경우 Mean Error가 0이 아닌 값을 가지게 된다.
 
@@ -660,9 +667,11 @@ pdf를 통해 표현 가능하며, 확률 변수가 가질 수 있는 값이 셀
 
 #### Uexplained variation(설명되지 않는 분산)
 
-Unexplained variance는 분산 분석 (ANOVA)에 사용되는 용어로, ANOVA는 다른 그룹의 평균을 비교하는 통계적 방법이다.
+**잔차제곱** = 1 – (Sum of Squared Residuals / Total Variance)
 
-The sum of the squared of the differences between the y-value of each ordered pair and each corresponding predicted y-value
+상기 그림에서 검정색 부분(|predicted - actual|)에 해당하는 부분으로 실제값은 새로 들어오는 값에 따라 가변적이므로 하나의 값으로 설명 불가능한 변동(분산)이다 (일반 '잔차제곱합' 생각하면 됨).
+
+Unexplained variance는 분산 분석 (ANOVA)에 사용되는 용어로, ANOVA는 다른 그룹의 평균을 비교하는 통계적 방법이다.
 
 </details>
 
@@ -809,3 +818,50 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 ****
 # *Lienar Algebra*
 
+#### Linearly Independent/Dependent
+<details markdown="1">
+<summary></summary>
+
+</details>
+
+#### Basis(기저) and Dimension(차원)
+<details markdown="1">
+<summary></summary>
+
+</details>
+
+#### Positive-definite란?
+<details markdown="1">
+<summary></summary>
+
+</details>
+
+#### Jacobian Matrix
+<details markdown="1">
+<summary></summary>
+
+</details>
+
+#### Singular Value Decomposition, SVD (특이값 분해)
+<details markdown="1">
+<summary></summary>
+
+</details>
+
+#### Eigen Vector & Eigen Value
+<details markdown="1">
+<summary></summary>
+
+</details>
+
+#### Determinant
+<details markdown="1">
+<summary></summary>
+
+</details>
+
+#### Rank & Null space
+<details markdown="1">
+<summary></summary>
+
+</details>
