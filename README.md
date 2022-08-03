@@ -201,6 +201,66 @@ Cost 함수로 **Discriminator Function**을 사용한다.
 
 #### [ANN vs. CNN](https://github.com/hchoi256/ai-boot-camp/tree/main/ai/deep-learning)
 
+#### LeNet
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/182619140-60df7e81-ad61-41e5-95bd-92acde08b076.png)
+
+최초의 CNN 네트워크로(1988), 손글씨 숫자를 인식하는데 사용된다.
+
+CNN과 같은 구조이지만, 두 가지 차이가 있다.
+- LeNet은 활성화 함수로 **시그모이드** 사용(*현재는 ReLU 사용으로 바뀜*)
+- LeNet은 **서브 샘플링**를 사용하여 중간 데이터 크기를 줄임 (*현재는 최대 풀링을 사용*)
+
+</details>
+
+#### AlexNet
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/182619159-fa6f24c0-2574-4f44-8925-9a2e48350478.png)
+
+AlexNet(2012)은 딥러닝 열풍을 일으키는 데 지대한 역할을 했다.
+
+LeNet과 같은 구조이지만, 세 가지 차이가 있다.
+- AlexNet 활성화 함수로 **ReLU** 사용
+- **LRN(Local Response Normalization, 국소적 정규화)**
+  - 현재는 ['Batch Normalization'](#Batch-Normalization)을 대신 사용한다.
+- **Dropout** 사용
+
+</details>
+
+
+#### ResNet
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/182612790-811f4363-8815-4dca-a7c1-191901e3f450.png)
+
+상기 에러 분포는 신경망이 깊을 수록(레이어 多) error 비율이 높다는 것을 보여준다.
+
+이는 깊은 CNN 네트워크는 **vanishing/exploding gradient** 문제 때문에 성능이 더 떨어지는 'degradation problem' 현상에 기인한다.
+
+이는 weight들의 분포가 균등하지 않고, 역전파가 재대로 이루어지지 않기에 발생하는 현상이다.
+- layer가 깊어질수록 미분을 많이해서 역전파 과정에서 앞 layer일수록 그 미분값이 작아져 그 가중치가 작아진다.
+
+![image](https://user-images.githubusercontent.com/39285147/182612717-db1040a1-e356-41b7-929a-b8d61973de19.png)
+
+이 문제에 대한 해결책으로 ResNet(Residual learning)은 skip connection을 이용한 'residual learning'을 통해 layer가 깊어짐에 따른 gradient vanishing 문제를 해결하였다.
+
+기존의 망과 차이가 있다면 입력값을 출력값에 더해줄 수 있도록 지름길(shortcut)이 하나 추가되었다.
+
+기존 네트워크는 입력값 x를 타겟값 y로 매핑하는 **함수 H(x)를 얻는 것**을 목적으로, H(x)-y를 최소화하는 방향으로 학습한다.
+
+반면, ResNet은 H(x)-x(= F(x), **잔차**)를 최소화해주는 방향으로 학습한다.
+
+잔차 F(x) + x = H(x) = x 네트워크로 변형하여 미분값이 F`(x) + 1 로 최소 1이상이다.
+
+> 잔차를 최소화하는 방향으로 학습하여 잔차가 0에 수렴함 --> 입출력 모두 x로 같아짐 --> 각 레이어마다 미분값이 x때문에 최소 1이된다. --> 'degradation problem' 해결.
+
+</details>
+
 #### RNN (순환신경망)
 <details markdown="1">
 <summary></summary>
