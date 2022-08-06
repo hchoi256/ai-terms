@@ -928,11 +928,38 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 <details markdown="1">
 <summary></summary>
 
+![image](https://user-images.githubusercontent.com/39285147/183256975-aa3e1f7b-d847-43ea-bdfd-feeaffc9d325.png)
+
 </details>
 
 #### Basis(기저) and Dimension(차원)
 <details markdown="1">
 <summary></summary>
+
+#### 기저
+![image](https://user-images.githubusercontent.com/39285147/183258337-f84374c3-312f-4b6e-bd7c-e5f0407b8029.png)
+
+어떤 벡터공간 V의 벡터들이 **선형독립**이면서 벡터공간 V **전체를 생성할 수 있는** 벡터들의 집합이다.
+
+다른 말로, R^m의 임의의 원소를 표현하기 위해 필요한 최소한의 벡터로 이루어진 집합이다.
+
+
+</details>
+
+
+#### 벡터공간(Vector space) and 부분공간(Subspace)
+<details markdown="1">
+<summary></summary>
+
+#### 벡터공간
+어떤 벡터 집합이 있을때, 그 벡터들로 구성할 수 있는 공간을 벡터 공간이라 한다.
+
+#### 부분공간
+어떤 벡터집합의 일부분으로 만든 공간을 전체 공간의 부분 공간이라 한다.
+
+예를들어 기저벡터 3개가 있다고 하면, 그 3개의 벡터로 만들수 있는 공간을 전체 벡터공간이라고 하며, 기저벡터 3개 중 일부인 2개나 1개만 사용해서 만들수 있는 공간이 부분공간입니다.
+
+다른 예시로, 전체 공간을 3차원 공간이라 했을때 전체 공간의 일부인 선(line)이나 면(plane)은 3차원 공간의 부분공간이라고 할 수 있죠.
 
 </details>
 
