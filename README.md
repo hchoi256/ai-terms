@@ -932,7 +932,7 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 </details>
 
-#### Basis(기저) and Dimension(차원)
+#### Basis(기저) vs. Dimension(차원)
 <details markdown="1">
 <summary></summary>
 
@@ -943,7 +943,25 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 다른 말로, R^m의 임의의 원소를 표현하기 위해 필요한 최소한의 벡터로 이루어진 집합이다.
 
+> 기저는 한 공간을 구성 할 수 있는 벡터 집합이다.
 
+#### 차원
+기저 벡터의 갯수를 차원(dimension)이라고 부른다.
+
+가령, 3차원 공간을 구성하는데는 3개의 기저벡터가 필요하다.
+
+> 영공간의 차원은 'nullity'이다.
+
+</details>
+
+#### Span
+<details markdown="1">
+<summary></summary>
+
+벡터들을 이용하여 선형결합을 이루어 벡터 스페이스를 만드는 과정을 span이라 한다.
+
+사용하는 벡터에 따라서는 모든 공간을 채울 수도 있고, 혹은 2차원에선 Line, 3차원 공간에선 평면(Plane)과 같이 부분적인 공간만을 채울 수도 있다.
+ 
 </details>
 
 
@@ -963,15 +981,61 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 </details>
 
-#### Positive-definite란?
+#### Positive-definite(양의 정부호, 정정행렬) vs. Negative-definite(음의 정부호)
 <details markdown="1">
 <summary></summary>
 
+성분이 모두 실수이고 대칭인 nxn 정방행렬 A가 0이 아닌 x에 대해 다음 부등식을 확인하라.
+
+#### 정정 행렬
+![image](https://user-images.githubusercontent.com/39285147/183260942-5f70c28d-7275-48be-a6d5-f4952d52ce76.png)
+![image](https://user-images.githubusercontent.com/39285147/183261097-7d7d9e33-9b01-4728-b01c-a397a72d4409.png)
+
+해당 행렬이 극소점을 갖는다는 것을 알 수 있다.
+
+> 준정정 행렬
+>
+> ![image](https://user-images.githubusercontent.com/39285147/183260976-a2493c83-6bbd-4448-86db-6db27a8921a6.png)
+
+#### 음의 정부호
+![image](https://user-images.githubusercontent.com/39285147/183261137-2529777d-54f9-4dfe-a3fd-aa8c9833c796.png)
+
+![image](https://user-images.githubusercontent.com/39285147/183261126-45d7c179-3f9d-4bed-8ece-d04aa198465a.png)
+
+해당 행렬이 극대점을 갖는다는 것을 알 수 있다.
+
 </details>
+
+#### 선형변환 vs. 비선형변환
+<details markdown="1">
+<summary></summary>
+
+#### 선형변환
+![image](https://user-images.githubusercontent.com/39285147/183261226-f33ac5c8-e185-48b4-9c5f-98386615a267.png)
+![image](https://user-images.githubusercontent.com/39285147/183261210-dfca19c0-30a0-42bc-98af-2ee13d7d6891.png)
+
+기하학적으로 선형변환이란 다음과 같은 특징을 가진 변환이다.
+- 변환 후에도 **원점의 위치가 변하지 않는다**.
+- 변환 후에도 격자들의 형태가 **직선의 형태**를 유지하고 있다.
+- 격자 간의 간격이 균등하다.
+
+#### 비선형변환
+![image](https://user-images.githubusercontent.com/39285147/183261229-5fe3b1bd-613e-4483-8ec2-9002cffdbd23.png)
+![image](https://user-images.githubusercontent.com/39285147/183261221-4c288e72-3728-4337-ad0c-00b8b601fa7b.png)
+
+
+</details>
+
 
 #### Jacobian Matrix
 <details markdown="1">
 <summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/183261259-19377bb4-001c-41c9-b303-87274ae06c19.png)
+
+비선형 변환을 선형 변환으로 근사시키는 행렬이다.
+
+상기 사진에서 비선형변환은 차원의 균열이 발생하여 선형의 형태가 사라지지만, 지코비안 행렬로 사용하여 국소적으로 관찰해보면 마치 선형변환을 취한 것처럼 직선으로 표현된다.
 
 </details>
 
@@ -981,9 +1045,44 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 </details>
 
-#### Eigen Vector & Eigen Value
+#### Eigen Vector & Eigen Value, 그리고 의의
 <details markdown="1">
 <summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/183261463-030bfbd8-506e-43b2-b448-c62fb0fd29fe.png)
+
+#### Eigen Vector
+선형변환을 취하였을 때, 방향은 변하지 않고 크기만 변하는 벡터를 고유벡터라 일컫는다.
+
+#### Eigen Value
+고유벡터가 방향은 유지한 채 크기만 변한다고 앞서 언급했다.
+
+여기서, 고유값은 그 크기가 얼마나 변하는지를 의미한다.
+
+#### 의의
+고유값/고유벡터를 활용하여 정방행렬에 대하여 동작하는 eigendecomposition(대각화)가 가능하다.
+- eigendecomposition가 가능하려면, 행렬 A가 n개의 linearly independent한 고유벡터를 가져야 한다. 
+
+이 대각화는 AI에서 PCA 기법에 활용된다.
+
+</details>
+
+
+#### 직교(orthogonal)와 정규직교(orthonormal), 그리고 직교행렬(orthogonal matrix)
+<details markdown="1">
+<summary></summary>
+
+#### **orthogonal**: v1·v2 = 0
+- 두 벡터 내적값이 0이면, 그들은 **직교**한다.
+
+#### **orthonormal**: v1·v2 = 0  &  ∥v1∥ = 1, ∥v2∥ = 1
+- 두 벡터의 내적이 0이고 벡터 각각 크기가 1이라면, 그들은 **정규직교**한다.
+
+#### **직교행렬(orthogonal matrix)**
+
+![image](https://user-images.githubusercontent.com/39285147/183261574-7f494d61-f85e-4e6b-824c-52a9750f232a.png)
+
+수학적으로는 전치행렬(transpose)를 역행렬로 갖는 정방행렬이다.
 
 </details>
 
@@ -991,10 +1090,18 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 <details markdown="1">
 <summary></summary>
 
+ 그 행렬의 특성을 결정짓는 중요한 값으로, 역행렬처럼 정방행렬에 대해서만 정의된다
+ 
 </details>
 
 #### Rank & Null space
 <details markdown="1">
 <summary></summary>
+
+Rank: **linearly independent**한 column vector의 최대 갯수(pivot 개수)
+
+Null space: **Ax=0**을 만족시키는 벡터 x의 모임
+
+![image](https://user-images.githubusercontent.com/39285147/183260814-41b5fc45-f17a-4d93-b4ab-6f7b4a3b8511.png)
 
 </details>
