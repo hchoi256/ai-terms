@@ -1082,7 +1082,9 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 ![image](https://user-images.githubusercontent.com/39285147/183261574-7f494d61-f85e-4e6b-824c-52a9750f232a.png)
 
-수학적으로는 전치행렬(transpose)를 역행렬로 갖는 정방행렬이다.
+수학적으로 전치행렬(transpose)를 역행렬로 갖는 정방행렬(nxn)이다.
+
+직교행렬(orthogonal matrix)은 transpose를 시키면 자신의 역행렬이 되기 때문에 다양한 선형대수학 계산에서 매우 편리한 성질을 가진 행렬이다.
 
 </details>
 
@@ -1090,7 +1092,7 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 <details markdown="1">
 <summary></summary>
 
- 그 행렬의 특성을 결정짓는 중요한 값으로, 역행렬처럼 정방행렬에 대해서만 정의된다
+그 행렬의 특성을 결정짓는 중요한 값으로, 역행렬처럼 정방행렬에 대해서만 정의된다
  
 </details>
 
