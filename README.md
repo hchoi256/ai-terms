@@ -422,7 +422,6 @@ RNN에 많이 사용하는 기법이다.
 
 </details>
 
-
 #### BERT vs. GPT
 <details markdown="1">
 <summary></summary>
@@ -442,8 +441,6 @@ GPT
 > 자기 회귀 모델: 마치 RNN처럼 이전 학습의 출력값이 다음 학습의 입력값이 되는 모델이다.
 
 </details>
-
-#### [BERT vs. GPT](https://hchoi256.github.io/nlp/nlp-basic-transformer/)
 
 #### Batch and Epoch
 <details markdown="1">
