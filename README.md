@@ -1,4 +1,22 @@
 ****
+# *Programming*
+
+#### Tree vs. Graph
+<details markdown="1">
+<summary></summary>
+
+#### Tree
+Hierarchy 구조로 되어 있어 상하관계를 나타낸 수 있는 자료구조이다.
+- cycle이 없다.
+
+#### Graph
+node와 edge로 구성되어 있으며, 각 node 간 방향성과 width를 통해 얼마나 서로 연관이 있는지 나타낼 수 있는 자료구조이다.
+- cycle이 있을 수 있다.
+
+</details>
+
+
+****
 # *Machine Learning*
 #### [Entropy, Cross Entropy, KL Divergence](https://github.com/hchoi256/ai-terms/blob/main/entropy.md)
 
@@ -13,7 +31,13 @@
 #### 차원의 저주
 <details markdown="1">
 <summary></summary>
-차원이 증가하면서 학습데이터 수가 차원 수보다 적어져서 성능이 저하되는 현상이다.
+
+데이터 차원이 증가하면서 데이터 밀도는 낮아지게 된다.
+
+이 복잡한 데이터를 학습하는 모델의 복잡도 또한 증가하고, 결국 학습데이터 수가 모델 복잡도 보다 낮아지게 된다.
+
+이것은 장차 과적합 현상을 유발하는 계기가 된다.
+
 </details>
 
 #### Activation Function의 종류 세 가지
@@ -191,8 +215,83 @@ Cost 함수로 **Discriminator Function**을 사용한다.
 
 </details>
 
+#### 라플라시안 행렬
+<details markdown="1">
+<summary></summary>
+
+공분산 행렬이 데이터 분포에 대한 특징을 주성분으로 설명하듯, 라플라시안 행렬은 Clustering(군집화)를 위한 그래프 모형의 특징을 설명한다.
+
+라플라시안 행렬을 단위행렬로 특이값 분해를 하여 얻은 두 번째로 작은 고유벡터를 **'피들러 벡터(Fidler Vector)'**라 지칭한다.
+
+이 벡터는 해당 그래프에서 가장 크게 나눌 수 있는 두 부분으로 분할하는 경계선의 주성분을 나타내고, 그 다음으로 작은 고유벡터는 그 다음으로 크게 나눠지는 분할선을 설명한다.
+
+</details>
+
+#### 차원축소(투영, 매니폴드 학습, PCA)
+<details markdown="1">
+<summary></summary>
+
+#### 투영(Projection)
+![image](https://user-images.githubusercontent.com/39285147/183505772-8d09a4d9-6347-49a5-9fe6-f565e21afdb8.png)
+
+고차원 공간에서 일부 특성으로 데이터를 표현하는 방법으로, 3차원 공간상 데이터를 2차원 부분 공간으로 투영 시켜 2차원 데이터셋을 만드는 것이다.
+
+#### 매니폴드 학습(Manifold Learning)
+![image](https://user-images.githubusercontent.com/39285147/183506069-6fe06d94-905a-4538-85bb-223300bb6183.png)
+
+고차원데이터가 있을 때 고차원 데이터를 전반적으로 잘 아우르는 subpsace가 존재한다는 가정에서 학습을 수행한다. 
+- 이렇게 찾은 Manifold는 데이터의 차원을 축소시킬 수 있다.
+- 대부분의 차원 축소 알고리즘이 이러한 매니폴드를 모델링하는 방식으로 동작한다.
+
+![image](https://user-images.githubusercontent.com/39285147/183506056-59fb8bf0-a71e-4dff-bafe-bc9ba519a7b4.png)
+
+하지만, 상기 이미지와 같은 한계점이 존재한다.
+
+학습 데이터셋의 차원을 감소시키면 학습 속도는 빨라지지만 모델의 성능은 항상 더 낫거나 간단한 모델이 되는 것은 아니다. 이것은 데이터셋이 어떠한 모양을 하고 있느냐에 따라 달라진다.
+
+#### PCA
+데이터에 가장 가까운 초평면(hyperplane)을 구한 다음, 데이터를 이 초평면에 투영(projection)시킨다.
+- **분산 보존**: 분산이 최대가 되는 축(= predicted-actual의 mse를 최소화하는 축)을 찾아 정보 손실을 줄인다.
+- **주성분**
+  - 1. 학습 데이터셋에서 분산이 최대인 축(axis)을 찾는다. 
+  - 2. 첫번째 축과 직교(orthogonal)하면서 분산이 최대인 두 번째 축을 찾는다.
+  - 3. 상기 과정을 반복하며 데이터셋의 차원(특성 수)만큼의 주성분이 되는 축들을 찾는다.
+
+공분산을 단위행렬로 고유벡터를 통해 주성분을 찾는다.
+- '*특이값 분해(SVC)*'
+- *eigen-decomposition*
+
+PCA는 이미지 압축(Image compression)과 같은 문제에 활용된다.
+
+</details>
+
+#### Singular Value Decomposition, SVD (특이값 분해)
+<details markdown="1">
+<summary></summary>
+
+</details>
+
+#### Marcov 과정
+<details markdown="1">
+<summary></summary>
+
+모든 사건의 결과가 이전 사건의 결과에 영향을 받는 확률론적 모형이다.
+
+</details>
+
 ****
 # *Deep Learning*
+
+#### ML vs. DL
+<details markdown="1">
+<summary></summary>
+
+머신 러닝은 사용자가 지정한 알고리즘을 사용하여 해당 데이터셋을 학습한 후, 학습으로 얻은 **경험적 정보에 입각하여** 최종 결정을 도출하는 과정이다.
+
+딥러닝은 알고리즘을 '계층'으로 구성하여 **자체적으로 배우고 지능적 결정을 내리는** 인공 신경망을 만드는 과정이다.
+
+</details>
+
 #### [Convolution](https://github.com/hchoi256/ai-boot-camp/blob/main/ai/deep-learning/cnn.md)
 <details markdown="1">
 <summary></summary>
@@ -1040,12 +1139,6 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 비선형 변환을 선형 변환으로 근사시키는 행렬이다.
 
 상기 사진에서 비선형변환은 차원의 균열이 발생하여 선형의 형태가 사라지지만, 지코비안 행렬로 사용하여 국소적으로 관찰해보면 마치 선형변환을 취한 것처럼 직선으로 표현된다.
-
-</details>
-
-#### Singular Value Decomposition, SVD (특이값 분해)
-<details markdown="1">
-<summary></summary>
 
 </details>
 
