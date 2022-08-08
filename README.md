@@ -1,6 +1,6 @@
 ****
 # *Machine Learning*
-#### [Entropy, KL Divergence](https://github.com/hchoi256/ai-terms/blob/main/entropy.md)
+#### [Entropy, Cross Entropy, KL Divergence](https://github.com/hchoi256/ai-terms/blob/main/entropy.md)
 
 #### Mutual Information(상호정보량)
 <details markdown="1">
