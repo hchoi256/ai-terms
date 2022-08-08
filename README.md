@@ -763,16 +763,6 @@ pdf를 통해 표현 가능하며, 확률 변수가 가질 수 있는 값이 셀
 
 </details>
 
-#### Total Variance
-<details markdown="1">
-<summary></summary>
-
-![image](https://user-images.githubusercontent.com/39285147/182010388-60cf7098-0c6e-4bc1-b243-cb7c4ff0cd98.png)
-
-두 확률 분포의 측정값이 벌어질 수 있는 가장 큰 값이다.
-
-</details>
-
 #### Explained variation(설명분산) vs Uexplained variation(설명되지 않는 분산)
 <details markdown="1">
 <summary></summary>
