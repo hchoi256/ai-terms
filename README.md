@@ -428,11 +428,13 @@ RNN에 많이 사용하는 기법이다.
 <summary></summary>
 
 BERT
+- 인코더 스택
 - 자기 회귀 모델이 아니다.
 - Self-Attention
   - 전체 맥락을 고려하는 대신, 예측 성능이 상대적으로 저조하다.
 
 GPT
+- 디코더 스택
 - 자기 회귀 모델이다.
 - Masked Self-Attention
   - 전체 맥락을 고려하지 못하지만, 예측 성능이 뛰어나다.
