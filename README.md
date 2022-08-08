@@ -856,13 +856,13 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 #### [MLE(최대우도법)](https://github.com/hchoi256/ai-terms/blob/main/mle.md)
 
 
-####  Conjugate Prior
+####  Conjugate Prior(켤레사전분포)
 <details markdown="1">
 <summary></summary>
 
-사후확률이 사전확률과 동일한 함수형태를 가지도록 해준다.
-
 베이즈 확률론에서 사후확률을 계산함에 있어 사후 확률이 사전 확률 분포와 같은 분포 계열에 속하는 경우 그 사전확률분포는 켤레 사전분포(Conjugate Prior)이다.
+
+켤레사전분포를 사용하는 이유는 사후분포의 계산이 편리해지기 때문이다.
 
 </details>
 
