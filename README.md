@@ -422,6 +422,25 @@ RNN에 많이 사용하는 기법이다.
 
 </details>
 
+
+#### BERT vs. GPT
+<details markdown="1">
+<summary></summary>
+
+BERT
+- 자기 회귀 모델이 아니다.
+- Self-Attention
+  - 전체 맥락을 고려하는 대신, 예측 성능이 상대적으로 저조하다.
+
+GPT
+- 자기 회귀 모델이다.
+- Masked Self-Attention
+  - 전체 맥락을 고려하지 못하지만, 예측 성능이 뛰어나다.
+
+> 자기 회귀 모델: 마치 RNN처럼 이전 학습의 출력값이 다음 학습의 입력값이 되는 모델이다.
+
+</details>
+
 #### [BERT vs. GPT](https://hchoi256.github.io/nlp/nlp-basic-transformer/)
 
 #### Batch and Epoch
