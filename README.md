@@ -704,13 +704,6 @@ pdf를 통해 표현 가능하며, 확률 변수가 가질 수 있는 값이 셀
 
 </details>
 
-
-#### 베이지안 이론이란?
-<details markdown="1">
-<summary></summary>
-이미 사건이 일어났고(i.e., 창고의 불량 청바지), 사건발생의 원인에 대한 확률(i.e., 사후확률 = 이 창고의 불량 청바지는 어떤 공장에서 불량생산되어 온것일까?)을 사건발생전에 이미 알고 있는 정보(i.e., 사전확률 = 구미, 청주, 대구 공장의 불량률)을 이용하여 구하는 것이라 하겠다. 
-</details>
-
 #### Unbiased Estimation의 장점은 무엇이며, 무조건 좋은건지?
 <details markdown="1">
 <summary></summary>
@@ -895,6 +888,8 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 두 확률 변수의 사전 확률과 사후 확률 사이의 관계를 나타내는 정리이다.
 
+이미 사건이 일어났고(i.e., 창고의 불량 청바지), 사건발생의 원인에 대한 확률(i.e., 사후확률 = 이 창고의 불량 청바지는 어떤 공장에서 불량생산되어 온것일까?)을 사건발생전에 이미 알고 있는 정보(i.e., 사전확률 = 구미, 청주, 대구 공장의 불량률)을 이용하여 구하는 것이라 하겠다. 
+
 ### Naive Beyas
 현상에 대한 관찰자의 주관적 믿음의 체계로써 판단하고 사전확률을 고려하여 과거의 사건이 현재 사건에 영향을 미칠 수 있다고 생각한다; 참된 확률값을 상수가 아닌 분포, 즉 확률 변수라 여긴다.
 
@@ -976,7 +971,6 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
  
 </details>
 
-
 #### 벡터공간(Vector space) and 부분공간(Subspace)
 <details markdown="1">
 <summary></summary>
@@ -1035,9 +1029,7 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 ![image](https://user-images.githubusercontent.com/39285147/183261229-5fe3b1bd-613e-4483-8ec2-9002cffdbd23.png)
 ![image](https://user-images.githubusercontent.com/39285147/183261221-4c288e72-3728-4337-ad0c-00b8b601fa7b.png)
 
-
 </details>
-
 
 #### Jacobian Matrix
 <details markdown="1">
@@ -1078,7 +1070,6 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 이 대각화는 AI에서 PCA 기법에 활용된다.
 
 </details>
-
 
 #### 직교(orthogonal)와 정규직교(orthonormal), 그리고 직교행렬(orthogonal matrix)
 <details markdown="1">
