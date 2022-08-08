@@ -614,6 +614,10 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 <details markdown="1">
 <summary></summary>
 
+![image](https://user-images.githubusercontent.com/39285147/183359630-8cb008ae-8f0e-4179-a0fd-9d05a0756faa.png)
+
+두 확률 분포의 측정값이 벌어질 수 있는 가장 큰 값이다.
+
 </details>
 
 #### P-value (유의확률)
