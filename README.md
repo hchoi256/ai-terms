@@ -536,7 +536,7 @@ RNN에 많이 사용하는 기법이다.
 <details markdown="1">
 <summary></summary>
 
-BERT
+[BERT](https://hchoi256.github.io/nlp/bert-3/)
 - 인코더 스택
 - 자기 회귀 모델이 아니다.
 - Self-Attention
