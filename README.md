@@ -448,6 +448,18 @@ Sigmoid - 이진분류
 
 </details>
 
+#### F1 score 이란?
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/184306400-f5ffc6d0-7cfd-430a-9b2a-86148ff9275e.png)
+
+***F1 Score*** : 정밀도(precision)와 재현율(recall)의 조화 평균
+
+**왜 F1 Score를 사용하나?**
+- 만약, *내일 눈이 내릴지 아닐지를 예측하는 모델*이 항상 False 로 예측하면 눈이 내리는 날은 그리 많지 않기 때문에 굉장히 높은 accuracy를 갖는다. 하지만, 높은 accuracy를 보유함에도 불구하고 이 모델은 전혀 쓸모가 없다. 이 때, **재현율**(실제로 True인 데이터를 모델이 True라고 인식한 데이터의 수) 개념에 도입된 F1 Score를 사용하면 효과적으로 accuracy 표현이 가능하다.
+
+</details>
 
 #### Internal Covariate Shift
 <details markdown="1">
@@ -959,6 +971,23 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 </details>
 
+#### 정확도(accuracy) vs. 정밀도(precision) vs. 재현율(recall)
+<details markdown="1">
+<summary></summary>
+
+정확도 : 예측이 정답과 얼마나 정확한가?
+
+정밀도 : 예측한 것중에 정답의 비율은?
+
+재현율 : 찾아야 할 것중에 실제로 찾은 비율은?
+
+**Precision Recall Curve**
+![image](https://user-images.githubusercontent.com/39285147/182006764-339fc132-96c4-4201-854a-f4513df2b3d5.png)
+
+- x축을 recall, y축을 precision으로 하는 커브를 의미한다.
+
+</details>
+
 #### Confusion Matrix(FN, TN, TP, FP) with precision and recall
 <details markdown="1">
 <summary></summary>
@@ -977,10 +1006,6 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 4. FN (False Negative): 음성(부정적 결과)이라고 예측한 것이 오답일 때
 - 즉 실제 Positive인 것을 Negative로 예측해서 틀렸음
 
-**Precision Recall Curve**
-![image](https://user-images.githubusercontent.com/39285147/182006764-339fc132-96c4-4201-854a-f4513df2b3d5.png)
-
-- x축을 recall, y축을 precision으로 하는 커브를 의미한다.
 </details>
 
 #### Frequentist vs. Beyas vs. Naive Beyas(나이브 베이스)
