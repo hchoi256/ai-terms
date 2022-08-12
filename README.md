@@ -914,14 +914,6 @@ Unexplained variance는 분산 분석 (ANOVA)에 사용되는 용어로, ANOVA�
 모수가 속할 것으로 기대되는 범위 (모수를 포함할 것으로 추정한 구간)
 </details>
 
-#### Normalization vs. Standardization
-<details markdown="1">
-<summary></summary>
-정규화: [0, 1] 분포
-
-표준화: 평균 0, 표준편차 1 분포
-</details>
-
 #### d-separation (방향성 독립)
 <details markdown="1">
 <summary></summary>
