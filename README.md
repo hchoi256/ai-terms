@@ -584,6 +584,17 @@ GPT
 
 **Gradient Vanishing**: 역전파 과정에서 입력층으로 갈 수록 기울기(Gradient)가 점차적으로 작아지는 현상 (시그모이드 대신 ReLU 사용)
 
+![image](https://user-images.githubusercontent.com/39285147/184325286-11a89511-75f3-4662-b146-09ee0be670b6.png)
+
+![image](https://user-images.githubusercontent.com/39285147/184325262-34d62587-14c6-47b4-bff8-5a286b3d5720.png)
+
+![image](https://user-images.githubusercontent.com/39285147/184325866-ee534343-db30-43e3-8329-96c906eb6cc7.png)
+
+Layer가 진행될 수록 sigmoid 함수가 연속으로 곱해지는 모습이다. 
+
+따라서, sigmoid 함수의 미분은 1보다 작으므로 곱해지는 횟수가 많을 수록 (= layer가 많을 수록) 입력층으로 가는 역전파 과정에서 기울기의 값은 더 작아진다.
+
+
 **Gradient Exploding**: 기울기가 점차 커지더니 가중치들이 비정상적으로 큰 값이 되면서 결국 발산된다.
 
 **Gradient Clipping**: 기울기 폭주를 막기 위해 임계값을 넘지 않도록 값을 자른다.
@@ -685,6 +696,13 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 <summary></summary>
 </details>
 
+#### 활성화 함수 (Activation Function)
+<details markdown="1">
+
+입력 신호의 총합을 출력 신호로 변환하는 함수를 일반적으로 활성화 함수라고 합니다. 입력 신호의 총합이 활성화를 일으키는지를 정하는 역할입니다.
+
+<summary></summary>
+</details>
 
 #### Back Propagation
 <details markdown="1">
@@ -693,7 +711,13 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 
 ![image](https://user-images.githubusercontent.com/39285147/184320779-679591c1-6146-4797-a725-4f766eec56d0.png)
 
-역전파 알고리즘은 출력값에 대한 입력값의 기울기(미분값)을 출력층 layer에서부터 계산하여 거꾸로 전파시키는 것이다.
+역전파 알고리즘은 출력값에 대한 입력값의 기울기(미분값)을 출력층 layer에서부터 계산하여 거꾸로 전파시킨다.
+
+역전파에서 입력층에 가까운 앞쪽의 layer로 갈수록 sigmoid 함수의 미분을 연쇄적으로 곱하는데 기울기가 1보다 작으므로 곱할수록 값은 점점 작아진다.
+
+layer가 아주 많으면 입력층에 가까운 앞쪽의 layer로 갈수록 기울기의 값은 거의 0에 가깝게 작아져서 가중치의 변화가 거의 없게 되고 error값도 더 이상 줄어들지 않게 된다.
+
+이를 **기울기 소실**이라 일컫는다.
 
 1. 이렇게 기울기(미분값)을 구하는 이유?
 - 역전파 알고리즘으로 각 layer에서 기울기 값을 구하고 그 기울기 값을 이용하여 Gradient descent 방법으로 가중치 w와 b를 update시키면서 파라미터가 매우 많고 layer가 여러개 있을때 학습하기 어려운 문제를 해결한다.
