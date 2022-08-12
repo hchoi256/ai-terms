@@ -689,6 +689,8 @@ GAP layer는 각각의 feature map의 값들을 평균을 취한 것으로, feat
 #### Back Propagation
 <details markdown="1">
 
+![image](https://user-images.githubusercontent.com/39285147/184322472-34414154-0df2-461a-8fa8-051f1ce8e890.png)
+
 ![image](https://user-images.githubusercontent.com/39285147/184320779-679591c1-6146-4797-a725-4f766eec56d0.png)
 
 역전파 알고리즘은 출력값에 대한 입력값의 기울기(미분값)을 출력층 layer에서부터 계산하여 거꾸로 전파시키는 것이다.
