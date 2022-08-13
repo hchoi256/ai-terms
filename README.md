@@ -28,8 +28,6 @@ node와 edge로 구성되어 있으며, 각 node 간 방향성과 width를 통�
 
 두 개의 확률변수 사이의 상호정보량(mutual information)은 하나의 확률변수가 다른 하나의 확률변수에 대해 제공하는 정보의 양을 의미한다.
 
-Entropy 값이 1이라면 
-
 </details>
 
 #### [시계열 분석](https://github.com/hchoi256/ai-terms/blob/main/time-series-analysis.md)
@@ -90,7 +88,6 @@ Folding activation functions are extensively used in the pooling layers in convo
 현재 x값에서 접선을 그리고 접선이 x축과 만나는 지점으로 x를 이동시켜 가면서 점진적으로 해를 찾는 방법이다.
 
 2차 방정식의 인수분해와 비슷해보이지만, 7차 방정식의 경우 인수분해가 어려워, 뉴턴법을 사용한다.
-
 
 </details>
 
@@ -164,6 +161,31 @@ ROC curve의 '**밑면적**'을 말한다.
 따라서, 훈련 데이터셋에 대하여 일정 비율을 fold로 분류하여 테스트 검증과 별개로 하나씩 테스트셋으로 사용하면서 교차 검증을 수행한다.
 
 이를 통해, 데이터의 100%를 테스트셋으로 활용하면서 총 K개의 성능 결과를 내고, 이 K 값들의 평균을 해당 모델의 성능으로 배출한다.
+
+</details>
+
+
+#### Feature selection
+<details markdown="1">
+<summary></summary>
+
+독립 변수중에서, 중복되거나 종속변수 (Y)와 관련이 없는 변수들을 제거하여, Y를 가장 잘 예측하는 변수들의 조합을 찾아내는 최적화 문제이다.
+
+**Feature selection을 사용하는 이유**
+- output을 예측하는데 상관없는 변수 多 --> computational cost ↑ --> overfitting
+
+**Feature selection 장점**
+- 학습 시간을 줄일 수 있다
+- 모델의 분산을 줄인다 --> 보다 robust하게 학습
+- 모델 간소화 --> 결과가 해석 용이
+
+**Feature Selection 종류**
+- 1) Wrapper method
+  - Feature 조합 선정 --> 기계 학습 --> 성능 평가 --> 조합 변경 (반복) --> 가장 성능 좋은 조합을 찾음.
+- 2) Filter method
+  - 전처리 과정에서 사전에 Feature selection을 통계적 방법(i.e., 피어슨 상관계수)으로 실행하고, 모델을 적합한다 (**엄청난 시간 단축**).
+- 3) Embedded method
+  - 모델 자체에 Feature selection 기능이 추가되어 있는 경우이다; Lasso Regression, Ridge Regression, and Decision Tree.
 
 </details>
 
