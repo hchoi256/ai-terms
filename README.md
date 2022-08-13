@@ -482,7 +482,9 @@ Sigmoid - 이진분류
 
 2. 이미지 확대, 증대, 회전, 밝기 조절, etc.
 
-3. etc. (무궁무진함)
+3. 가중치 규제 (Regularization)
+
+4. etc.
 
 </details>
 
