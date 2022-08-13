@@ -548,10 +548,14 @@ BN은 학습 가능한 parameters가 존재하는 하나의 레이어 구조가 
 <summary></summary>
 </details>
 
-#### Layer Normalization
+#### L1 vs. L2 Regularization
 <details markdown="1">
 
-RNN에 많이 사용하는 기법이다.
+#### L1 규제 (Lasso)
+규제가 커질 수록 훈련 세트의 손실과 검증 세트의 손실이 커지고 (= underfitting), 규제가 커질 수록 가중치 값이 "0"에 가까워진다. 
+
+#### L2 규제 (Ridge)
+L1 규제와 비슷한 양상을 보이나, 규제가 강해져도 과소 접합이 그렇게 심해지지 않는 특성을 가지고 있다. 그래서, **L2 규제를 많이 사용한다.**
 
 <summary></summary>
 </details>
@@ -585,7 +589,7 @@ Gradient Desceent 방법은 미분값으로 최적의 피라미터를 찾는 **�
 
 또한, Normal Equation의 핵심은 역행렬 X^t를 계산하는 것인데, 비가역행렬(행렬 X가 역행렬이 존재하지 않는 경우)에 대하여 다음 처리가 수반된다.
 - 1) 불필요한 feature 혹은 두 개의 feature가 서로 유사한 경우, 하나를 지워야한다.
-- 2) 보유한 데이터의 크기보다 feature의 수가 많은 경우, feature를 부분적으로 지우거나 regularzation을 적용해야 한다.
+- 2) 보유한 데이터의 크기보다 feature의 수가 많은 경우, feature를 부분적으로 지우거나 regularization을 적용해야 한다.
 
 </details>
 
