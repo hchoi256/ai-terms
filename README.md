@@ -261,15 +261,11 @@ Cost 함수로 **Discriminator Function**을 사용한다.
 
 </details>
 
-#### 라플라시안 행렬
+#### Marcov 모형
 <details markdown="1">
 <summary></summary>
 
-공분산 행렬이 데이터 분포에 대한 특징을 주성분으로 설명하듯, 라플라시안 행렬은 Clustering(군집화)를 위한 그래프 모형의 특징을 설명한다.
-
-라플라시안 행렬을 단위행렬로 특이값 분해를 하여 얻은 두 번째로 작은 고유벡터를 **'피들러 벡터(Fidler Vector)'**라 지칭한다.
-
-이 벡터는 해당 그래프에서 가장 크게 나눌 수 있는 두 부분으로 분할하는 경계선의 주성분을 나타내고, 그 다음으로 작은 고유벡터는 그 다음으로 크게 나눠지는 분할선을 설명한다.
+모든 사건의 결과가 이전 사건의 결과에 영향을 받는 확률론적 모형이다.
 
 </details>
 
@@ -321,11 +317,83 @@ PCA는 이미지 압축(Image compression)과 같은 문제에 활용된다.
 
 </details>
 
-#### Marcov 과정
+#### Classification
 <details markdown="1">
 <summary></summary>
 
-모든 사건의 결과가 이전 사건의 결과에 영향을 받는 확률론적 모형이다.
+#### Naive Beyas Classification
+![image](https://user-images.githubusercontent.com/39285147/184468951-ecefd078-3a91-460a-95d4-a63df76e9497.png)
+- *X: feature vectors; linearly independent*
+- *Y: label (i.e., cat)*
+
+#### MLE
+[*Gaussian Model*]
+
+![image](https://user-images.githubusercontent.com/39285147/184468929-e20cb77d-acb2-42f5-b390-453d23c351b2.png)
+
+로지스틱 회귀 모델에서는 계수 W를 추정하기 위해서 MLE(Maximum Likelihood Estimation) 개념을 사용한다.
+
+> 로지스틱 회귀: Y = 이진 분류(0 or 1), 베르누이 시행을 전제로 하는 모델이다.
+
+#### KNN classification
+![image](https://user-images.githubusercontent.com/39285147/184468753-8f605c4e-a841-408d-a5cc-50d605cd984f.png)
+
+> KNN 분류를 수행할 때, categorical variables에 대해서 Hamming distance를 사용한다
+
+</details>
+
+#### Clustering
+<details markdown="1">
+<summary></summary>
+
+#### Kmeans
+1, 초기 clusters 개수 설정
+
+2. 각 데이터에 대해 가장 가까운 center에 포함시킨다 (*argmin: 유클리드 거리*)
+
+3. 각 군집 데이터 center 갱신
+
+**Termination** --> Yes
+
+**Global optimum** --> no guarantee
+
+**Picking starting cluster centers** --> random (not ideal)
+
+#### HCA
+![image](https://user-images.githubusercontent.com/39285147/184468241-e18da24e-b090-4f0f-b123-f1e0b09a6968.png)
+![image](https://user-images.githubusercontent.com/39285147/184468255-385a3941-2725-4ad2-8eca-5807c3f6adfc.png)
+
+데이터셋에 대한 이진 트리를 만든다; 데이터 수가 N개라면 이진 트리의 깊이은 N-1이다.
+
+아래는 HCA 관련 간단 문제이다.
+
+![image](https://user-images.githubusercontent.com/39285147/184468436-58277311-3a51-4e70-aa34-5970d1de5d3f.png)
+
+#### Spectral clustering algorithm
+![image](https://user-images.githubusercontent.com/39285147/184468479-b5e9a8ff-ec7f-44ab-a441-5d3b4402b24e.png)
+
+그래프 모형에서 가장 합리적으로 분할하는 알고리즘이다.
+
+[*라플라시안 행렬*]
+
+![image](https://user-images.githubusercontent.com/39285147/184468464-fb599043-10e7-44f4-89b7-c86e93427640.png)
+
+라플라시안 행렬에서 고유값 분해를 통해 얻은 고유벡터 중 2번 째로 가장 작은 벡터를 통해 합리적인 분할선에 대한 주성분을 얻는다.
+
+#### t-SNE
+t-SNE는 비선형적인 방법의 차원 축소 방법이고 특히 고차원의 데이터 셋을 군집화를 통해 직관적으로 시각화하는 것에 성능이 좋다. 
+
+</details>
+
+#### 라플라시안 행렬
+<details markdown="1">
+<summary></summary>
+
+공분산 행렬이 데이터 분포에 대한 특징을 주성분으로 설명하듯, 라플라시안 행렬은 Clustering(군집화)를 위한 그래프 모형의 특징을 설명한다.
+
+라플라시안 행렬을 단위행렬로 특이값 분해를 하여 얻은 두 번째로 작은 고유벡터를 **'피들러 벡터(Fidler Vector)'**라 지칭한다.
+
+이 벡터는 해당 그래프에서 가장 크게 나눌 수 있는 두 부분으로 분할하는 경계선의 주성분을 나타내고, 그 다음으로 작은 고유벡터는 그 다음으로 크게 나눠지는 분할선을 설명한다.
 
 </details>
 
@@ -1219,6 +1287,13 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 
 </details>
 
+#### 1-norm vs. 2-norm
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/184468781-8e627c79-694b-401a-81a2-fe62bf0831aa.png)
+
+</details>
 
 #### 편미분이란?
 <details markdown="1">
