@@ -291,9 +291,11 @@ PCA는 이미지 압축(Image compression)과 같은 문제에 활용된다.
 
 </details>
 
-#### Singular Value Decomposition, SVD (특이값 분해)
+#### Eigendecomposition(고유값 분해) vs. Singular Value Decomposition, SVD (특이값 분해)
 <details markdown="1">
 <summary></summary>
+
+고유값 분해는 **정방 행렬**(행과 열의 크기가 같은 행렬)에 대해서만 가능하지만, 특이값 분해는 정방 행렬뿐만 아니라 행과 열의 크기가 다른 **모든 직각 행렬**에 대하여 적용 가능하다.
 
 </details>
 
@@ -559,6 +561,33 @@ RNN에 많이 사용하는 기법이다.
 #### [Optimizer](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/gradient-discent.md)
 
 #### [Gradient Descent & Stocastic Gradient Descent](https://github.com/hchoi256/lg-ai-auto-driving-radar-sensor/blob/main/supervised-learning/gradient-discent.md)
+
+#### 정규 방정식(Normal Equation) vs. Gradient Descent
+<details markdown="1">
+<summary></summary>
+
+[*정규 방정식*]
+
+![image](https://user-images.githubusercontent.com/39285147/184464139-8cdc88b9-7a70-4be3-84d3-6b79a6a9d990.png)
+
+[*정규 방정식 vs. GD*]
+
+![image](https://user-images.githubusercontent.com/39285147/184464011-277672e4-a69e-44cb-94ad-df91dc8d8b90.png)
+
+Gradient Descent처럼 알지 못하는 값(parameter)를 예측하기 위한 방법론이다.
+
+Gradient Desceent 방법은 미분값으로 최적의 피라미터를 찾는 **반복적인 연산 과정**이 단점이었지만, 정규 방정식은 **단번에** 피라미터를 구할 수 있다.
+- Gradient Descent algorithm: **Scaling 필요**, Normal Equation: 한번에 결과값을 구하기 때문에 **Scaling 필요없음**.
+- 
+하지만, 정규 방정식은 **피처 개수가 많을 경우 연산이 느려진다**; 그래도, 일정 시간 내에 해법을 찾는 것이 가능하다.
+
+> 보통 feature가 10000개 이하 라면 Normal Equation이 훨씬 좋은 성능을 보이지만, 그 이상 이라면 Gradient Descent algorithm이 좋다.
+
+또한, Normal Equation의 핵심은 역행렬 X^t를 계산하는 것인데, 비가역행렬(행렬 X가 역행렬이 존재하지 않는 경우)에 대하여 다음 처리가 수반된다.
+- 1) 불필요한 feature 혹은 두 개의 feature가 서로 유사한 경우, 하나를 지워야한다.
+- 2) 보유한 데이터의 크기보다 feature의 수가 많은 경우, feature를 부분적으로 지우거나 regularzation을 적용해야 한다.
+
+</details>
 
 #### Local Optima에 빠져도 딥러닝 학습에 긍정적인 이유?
 <details markdown="1">
@@ -1011,12 +1040,6 @@ Unexplained variance는 분산 분석 (ANOVA)에 사용되는 용어로, ANOVA�
 
 </details>
 
-#### Confidence Interval(신뢰구간)
-<details markdown="1">
-<summary></summary>
-모수가 속할 것으로 기대되는 범위 (모수를 포함할 것으로 추정한 구간)
-</details>
-
 #### d-separation (방향성 독립)
 <details markdown="1">
 <summary></summary>
@@ -1155,6 +1178,17 @@ P(A,B|C) = P(A|C)*P(B|C) , (AㅛB)|C 으로 표기되며, 조건부 독립. A와
 ![image](https://user-images.githubusercontent.com/39285147/180639613-ba4a1e96-ae57-4735-bc82-82a5a8fb93a5.png)
 
 '사후확률'은 사전확률에 우도를 곱한 값으로, 사후확율을 통하여 최종적으로 새로운 데이터의 분류 집합을 결정한다.
+
+</details>
+
+
+#### 편미분이란?
+<details markdown="1">
+<summary></summary>
+
+편미분은 함수의 변수가 1개가 아닌 2개 이상의 함수에서 변수 1개의 변화에 따른 기울기를 알고 싶을 때 사용된다.
+
+z = f(x, y)에서 z값에 영향을 끼치는 변수가 x, y 두 개인데, 이 변수들이 제각각 움직인다면 무엇이 z에 영향을 주는지 알 수 없음으로, 하나의 변수에 대한 미분 (= 편미분)을 적용해서 z값에 영향을 주는 변수를 찾고자 한다.
 
 </details>
 
