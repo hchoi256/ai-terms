@@ -284,6 +284,16 @@ PCA는 이미지 압축(Image compression)과 같은 문제에 활용된다.
 ****
 # *Deep Learning*
 
+#### Tensor(텐서)
+<details markdown="1">
+<summary></summary>
+
+매우 수학적인 개념으로 '데이터의 배열'을 의미한다.
+
+따라서, 텐서의 Rank는 간단히 말해서 몇 차원 배열인가를 의미한다.
+
+</details>
+
 #### ML vs. DL
 <details markdown="1">
 <summary></summary>
