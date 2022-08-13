@@ -25,7 +25,11 @@ node와 edge로 구성되어 있으며, 각 node 간 방향성과 width를 통�
 #### Mutual Information(상호정보량)
 <details markdown="1">
 <summary></summary>
-두 개의 확률변수 사이의 상호정보량(mutual information)은 하나의 확률변수가 다른 하나의 확률변수에 대해 제공하는 정보의 양을 의미합니다.
+
+두 개의 확률변수 사이의 상호정보량(mutual information)은 하나의 확률변수가 다른 하나의 확률변수에 대해 제공하는 정보의 양을 의미한다.
+
+Entropy 값이 1이라면 
+
 </details>
 
 #### [시계열 분석](https://github.com/hchoi256/ai-terms/blob/main/time-series-analysis.md)
@@ -39,6 +43,16 @@ node와 edge로 구성되어 있으며, 각 node 간 방향성과 width를 통�
 이 복잡한 데이터를 학습하는 모델의 복잡도 또한 증가하고, 결국 학습데이터 수가 모델 복잡도 보다 낮아지게 된다.
 
 이것은 장차 과적합 현상을 유발하는 계기가 된다.
+
+</details>
+
+#### Linear regression vs. Logistic regression
+<details markdown="1">
+<summary></summary>
+
+Linear regression(회귀분석)에서는 /88예측값과 종속변수가 실수/88이지만, Logistic regression(로지스틱 회귀분석)에서는 **예측값과 종속변수 y값이 0 또는 1을 가진다*.
+
+따라서, 로지스틱 회귀분석에서 데이터를 분류할 때 0인지 1인지 예측하는 모델을 만들고자 *sigmoid 활성화 함수*를 사용한다.
 
 </details>
 
@@ -93,13 +107,21 @@ Naive Beyas 정리를 토대로 사전확률을 통한 사후확률 도출이라
 
 </details>
 
-#### ROC (Receiver Operating Characteristic)
+#### ROC (Receiver Operating Characteristic) vs. AUC
 <details markdown="1">
 <summary></summary>
 
+#### ROC
 ![image](https://user-images.githubusercontent.com/39285147/180647724-6bd69d98-6ae4-46f5-b28c-255d5acc95dd.png)
 
 ROC 곡선은 Binary Classifier System에 대한 성능 평가 기법으로, 모델이 맞게 예측한 TP를 y축으로 틀리게 예측한 FP를 x축으로 하여 도표를 그린다.
+
+좌상단으로 가장 많이 치우친 그래프를 갖는 모델이 가장 높은 성능을 보인다고 할 수 있다.
+
+#### AUC (Area Under the ROC Curve)
+ROC curve의 '**밑면적**'을 말한다.
+
+성능 평가에 있어서 '수치적인 기준'이 될 수 있는 값으로, 1에 가까울수록 그래프가 좌상단에 근접하게 되므로 좋은 모델이라고 할 수 있다.
 
 </details>
 
@@ -243,7 +265,9 @@ Cost 함수로 **Discriminator Function**을 사용한다.
 
 고차원데이터가 있을 때 고차원 데이터를 전반적으로 잘 아우르는 subpsace가 존재한다는 가정에서 학습을 수행한다. 
 - 이렇게 찾은 Manifold는 데이터의 차원을 축소시킬 수 있다.
-- 대부분의 차원 축소 알고리즘이 이러한 매니폴드를 모델링하는 방식으로 동작한다.
+- 대부분의 차원 축소 알고리즘 (= LDA)이 이러한 매니폴드를 모델링하는 방식으로 동작한다.
+
+Manifold 공간에서, 데이터가 갖고 있는 변하지 않는 고유 특성을 찾는데 사용된다 (= 데이터 본연의 geometric 특성은 유지하면서 저차원 공간으로 투영한다).
 
 ![image](https://user-images.githubusercontent.com/39285147/183506056-59fb8bf0-a71e-4dff-bafe-bc9ba519a7b4.png)
 
@@ -858,6 +882,52 @@ pdf를 통해 표현 가능하며, 확률 변수가 가질 수 있는 값이 셀
 *Uniform*(균일분포): 특정 범위 내에서 균등하게 나타나 있을 경우를 가리킨다.
 
 </details>
+
+
+#### MDS (Multidimensional Scaling, 다차원척도법)
+<details markdown="1">
+<summary></summary>
+
+MDS는 linear manifold learning의 한 종류로써, 개체간 (비)유사성 (= 유클리드 거리)을 이용하여 관계를 이해하는데 주로 사용된다.
+
+> *Manifold*: 근거리에서는 유클리드(= 직선), 원거리에서는 그렇지 않은(= 곡선) 공간이다.
+
+![image](https://user-images.githubusercontent.com/39285147/184463373-26687aa5-9460-4425-9519-dbbf0b4419f9.png)
+
+가령, 상기 모형처럼 MDS를 이용하여 **저차원 공간상에 개체들을 매핑시키고 각 개체들 간의 관계를 파악**할 수 있다.
+
+</details>
+
+
+#### LDA (Latent Dirichlet Allocation, 잠재 디리클레 책정)
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/184463111-af723363-853d-4b19-861f-d3b7614b6dc6.png)
+
+주어진 문서에 대하여 어떤 주제들이 존재하는지에 대한 확률 모형이다.
+
+상기 그림에서 색깔별로 토픽이 나눠져 있다.
+- 노란색: gene, dna, genetic --> 유전
+- 초록색: 뇌 관련 토픽
+
+> 단어별로 쓰여진 값은 토픽에서 등장할 확률이다.
+
+오른쪽에 있는 **Topic proportions & assignments**가 LDA의 핵심 알고리즘이다.
+
+</details>
+
+#### 주변확률분포(Marginal Distribution)과 조건부 분포(Conditional Distribution)
+<details markdown="1">
+<summary></summary>
+*주변확률분포*: **하나의** 확률변수에 대한 결합확률들을 모두 합한다.
+
+*조건부 분포*: 어떤 사건 B가 일어났을 때 사건 A가 발생할 확률이다; P(B|A)
+
+![image](https://user-images.githubusercontent.com/39285147/180476247-0371081a-8563-4ff8-9f83-e0a70a472676.png)
+
+</details>
+
 
 #### Unbiased Estimation의 장점은 무엇이며, 무조건 좋은건지?
 <details markdown="1">
