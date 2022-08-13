@@ -565,7 +565,7 @@ whitening을 하게되면 이전 레이어로부터 학습이 가능한 paramete
 
 ![image](https://user-images.githubusercontent.com/39285147/182007608-a8c03859-9a8a-451b-bf39-4ebc9876fdc0.png)
 
-CNN에 많이 사용하는 기법으로, 입력 데이터에 대하여 각 차원(feature)별로 mini-batch를 만들어 그 평균과 분산을 계산하는 normalization을 수행한다.
+CNN에 많이 사용하는 기법으로, **신경망 학습 과정에서** 입력 데이터에 대하여 각 차원(feature)별로 mini-batch를 만들어 그 평균과 분산을 계산하는 normalization을 수행한다.
 
 BN은 학습 가능한 parameters가 존재하는 하나의 레이어 구조가 되며 이 기법이 발표된 이후 기존의 딥러닝 구조에서 Convolution Layer와 Activation Layer 사이에 BN Layer가 들어간 형태로 발전했다.
 
@@ -813,6 +813,16 @@ Layer가 진행될 수록 sigmoid 함수가 연속으로 곱해지는 모습이�
 **Gradient Exploding**: 기울기가 점차 커지더니 가중치들이 비정상적으로 큰 값이 되면서 결국 발산된다.
 
 **Gradient Clipping**: 기울기 폭주를 막기 위해 임계값을 넘지 않도록 값을 자른다.
+
+</details>
+
+#### Perplexity
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/184467625-9c7a79c0-4bab-40ab-9b2b-5a1d747df56e.png)
+
+언어 모델을 평가하기 위한 평가 지표로, 그 수치가 **낮을수록 언어 모델의 성능이 좋다**.
 
 </details>
 
