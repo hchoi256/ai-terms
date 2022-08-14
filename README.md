@@ -48,7 +48,7 @@ node와 edge로 구성되어 있으며, 각 node 간 방향성과 width를 통�
 <details markdown="1">
 <summary></summary>
 
-Linear regression(회귀분석)에서는 /88예측값과 종속변수가 실수/88이지만, Logistic regression(로지스틱 회귀분석)에서는 **예측값과 종속변수 y값이 0 또는 1을 가진다*.
+Linear regression(회귀분석)에서는 **예측값과 종속변수가 실수**이지만, Logistic regression(로지스틱 회귀분석)에서는 **예측값과 종속변수 y값이 0 또는 1을 가진다*.
 
 따라서, 로지스틱 회귀분석에서 데이터를 분류할 때 0인지 1인지 예측하는 모델을 만들고자 *sigmoid 활성화 함수*를 사용한다.
 
