@@ -397,6 +397,27 @@ t-SNE는 비선형적인 방법의 차원 축소 방법이고 특히 고차원�
 
 </details>
 
+#### 탐색 알고리즘 비교: BFS vs. DFS vs. UCS vs. IDS
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/184559421-84230e83-4dab-4ee1-81bd-2a46ee11a83f.png)
+
+#### BFS (Queue)
+![image](https://user-images.githubusercontent.com/39285147/184559431-ea1c0174-043d-45d2-8268-94c8c5f8949e.png)
+
+#### DFS (Stack)
+![image](https://user-images.githubusercontent.com/39285147/184559438-10d49998-8d44-47ad-8e08-068de04cd5ce.png)
+
+#### UCS (Uniform-cost search)
+![image](https://user-images.githubusercontent.com/39285147/184559491-9bc03833-21ef-4052-bfad-8a7f29b9f78d.png)
+
+#### IDS (Iterative deepening)
+![image](https://user-images.githubusercontent.com/39285147/184559485-141c0130-4087-499d-92a9-0e754d80f4b7.png)
+
+</details>
+
+
 #### [Minimax 알고리즘](https://www.youtube.com/watch?time_continue=2&v=H0jUgUl5vcU&feature=emb_logo)
 <details markdown="1">
 <summary></summary>
