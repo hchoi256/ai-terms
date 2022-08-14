@@ -397,6 +397,18 @@ t-SNE는 비선형적인 방법의 차원 축소 방법이고 특히 고차원�
 
 </details>
 
+#### [Minimax 알고리즘](https://www.youtube.com/watch?time_continue=2&v=H0jUgUl5vcU&feature=emb_logo)
+<details markdown="1">
+<summary></summary>
+
+1대1 턴제 게임에서 쉽게 적용할 수 있는 **트리구조 알고리즘**으로, 상대방이 최적의 판단을 한다는 전제를 가지고 계산한다.
+- *MIN*: 유저의 최선의 선택
+- *MAX*: AI 로봇의 최선의 선택
+
+이 알고리즘은 MIN과 MAX를 번갈아 계산하여 결과값으로, 이는 유저의 선택을 염두한 결과이다.
+
+</details>
+
 ****
 # *Deep Learning*
 
