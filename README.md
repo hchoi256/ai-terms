@@ -3,6 +3,41 @@
 ****
 # *Programming*
 
+
+#### 탐색 알고리즘 비교: BFS vs. DFS vs. UCS vs. IDS
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/184559421-84230e83-4dab-4ee1-81bd-2a46ee11a83f.png)
+![image](https://user-images.githubusercontent.com/39285147/184560207-9046370f-ecca-4e33-9934-89f62f2e345f.png)
+
+#### BFS (Queue)
+![image](https://user-images.githubusercontent.com/39285147/184559431-ea1c0174-043d-45d2-8268-94c8c5f8949e.png)
+
+#### DFS (Stack)
+![image](https://user-images.githubusercontent.com/39285147/184559438-10d49998-8d44-47ad-8e08-068de04cd5ce.png)
+
+#### UCS (Uniform-cost search)
+![image](https://user-images.githubusercontent.com/39285147/184559491-9bc03833-21ef-4052-bfad-8a7f29b9f78d.png)
+
+#### IDS (Iterative deepening)
+![image](https://user-images.githubusercontent.com/39285147/184559485-141c0130-4087-499d-92a9-0e754d80f4b7.png)
+
+</details>
+
+
+#### [Minimax 알고리즘](https://www.youtube.com/watch?time_continue=2&v=H0jUgUl5vcU&feature=emb_logo)
+<details markdown="1">
+<summary></summary>
+
+1대1 턴제 게임에서 쉽게 적용할 수 있는 **트리구조 알고리즘**으로, 상대방이 최적의 판단을 한다는 전제를 가지고 계산한다.
+- *MIN*: 유저의 최선의 선택
+- *MAX*: AI 로봇의 최선의 선택
+
+이 알고리즘은 MIN과 MAX를 번갈아 계산하여 결과값으로, 이는 유저의 선택을 염두한 결과이다.
+
+</details>
+
 #### Tree vs. Graph
 <details markdown="1">
 <summary></summary>
@@ -394,39 +429,6 @@ t-SNE는 비선형적인 방법의 차원 축소 방법이고 특히 고차원�
 라플라시안 행렬을 단위행렬로 특이값 분해를 하여 얻은 두 번째로 작은 고유벡터를 **'피들러 벡터(Fidler Vector)'**라 지칭한다.
 
 이 벡터는 해당 그래프에서 가장 크게 나눌 수 있는 두 부분으로 분할하는 경계선의 주성분을 나타내고, 그 다음으로 작은 고유벡터는 그 다음으로 크게 나눠지는 분할선을 설명한다.
-
-</details>
-
-#### 탐색 알고리즘 비교: BFS vs. DFS vs. UCS vs. IDS
-<details markdown="1">
-<summary></summary>
-
-![image](https://user-images.githubusercontent.com/39285147/184559421-84230e83-4dab-4ee1-81bd-2a46ee11a83f.png)
-
-#### BFS (Queue)
-![image](https://user-images.githubusercontent.com/39285147/184559431-ea1c0174-043d-45d2-8268-94c8c5f8949e.png)
-
-#### DFS (Stack)
-![image](https://user-images.githubusercontent.com/39285147/184559438-10d49998-8d44-47ad-8e08-068de04cd5ce.png)
-
-#### UCS (Uniform-cost search)
-![image](https://user-images.githubusercontent.com/39285147/184559491-9bc03833-21ef-4052-bfad-8a7f29b9f78d.png)
-
-#### IDS (Iterative deepening)
-![image](https://user-images.githubusercontent.com/39285147/184559485-141c0130-4087-499d-92a9-0e754d80f4b7.png)
-
-</details>
-
-
-#### [Minimax 알고리즘](https://www.youtube.com/watch?time_continue=2&v=H0jUgUl5vcU&feature=emb_logo)
-<details markdown="1">
-<summary></summary>
-
-1대1 턴제 게임에서 쉽게 적용할 수 있는 **트리구조 알고리즘**으로, 상대방이 최적의 판단을 한다는 전제를 가지고 계산한다.
-- *MIN*: 유저의 최선의 선택
-- *MAX*: AI 로봇의 최선의 선택
-
-이 알고리즘은 MIN과 MAX를 번갈아 계산하여 결과값으로, 이는 유저의 선택을 염두한 결과이다.
 
 </details>
 
