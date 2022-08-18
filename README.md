@@ -744,7 +744,7 @@ Gradient Desceent 방법은 미분값으로 최적의 피라미터를 찾는 **�
 <details markdown="1">
 <summary></summary>
 
-[BERT](https://hchoi256.github.io/nlp/bert-3/)
+[BERT](https://hchoi256.github.io/bert/bert-1/)
 - 인코더 스택
 - 자기 회귀 모델이 아니다.
 - Self-Attention
