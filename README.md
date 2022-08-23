@@ -534,7 +534,7 @@ LeNet과 같은 구조이지만, 세 가지 차이가 있다.
 
 </details>
 
-#### RNN (순환신경망)
+#### RNN (순환신경망), LSTM
 <details markdown="1">
 <summary></summary>
 
