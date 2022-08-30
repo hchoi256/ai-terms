@@ -3,7 +3,6 @@
 ****
 # *Programming*
 
-
 #### 탐색 알고리즘 비교: BFS vs. DFS vs. UCS vs. IDS
 <details markdown="1">
 <summary></summary>
