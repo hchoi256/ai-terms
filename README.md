@@ -23,7 +23,6 @@
 
 </details>
 
-
 #### [Minimax 알고리즘](https://www.youtube.com/watch?time_continue=2&v=H0jUgUl5vcU&feature=emb_logo)
 <details markdown="1">
 <summary></summary>
