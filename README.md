@@ -23,6 +23,14 @@
 
 </details>
 
+#### CUDA Programming
+<details markdown="1">
+<summary></summary>
+
+NVDIA 제공 개발툴로, 많은 양의 연산을 동시에 처리하는 것이 목표이다. 그러므로 딥러닝, 채굴과 같은 수학적 계산에 많이 쓰인다.
+
+</details>
+
 #### [Minimax 알고리즘](https://www.youtube.com/watch?time_continue=2&v=H0jUgUl5vcU&feature=emb_logo)
 <details markdown="1">
 <summary></summary>
