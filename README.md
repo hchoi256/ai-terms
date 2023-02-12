@@ -837,6 +837,43 @@ Pooling
 <details markdown="1">
 <summary></summary>
 
+#### k-way n-shot Learning
+![image](https://user-images.githubusercontent.com/39285147/218307155-c42a76f6-28e4-423d-b580-e6d5742b9447.png)
+
+Support set의 클래스 개수와 샘플 수를 기준으로 k-way n-shot 이라는 표현을 쓴다.
+- k-way: Support set이 k개의 클래스로 이루어 짐
+  - k가 클수록 모델의 정확도는 낮아지게 된다.
+- n-shot: 각 클래스가 가진 sample의 개수
+  - n이 클 수록 모델의 정확도는 높아지게 된다.
+
+> n이 1이 되면 one-shot learning이라고 부른다.
+
+#### 학습방법
+![image](https://user-images.githubusercontent.com/39285147/218307280-9cc9a50b-1ac7-4fda-859b-35a66cf825e6.png)
+
+많은 training set을 통해 각 사진별로 중요한 특징들을 잘 추출해서 같다와 다르다를 학습해야 한다.
+
+![image](https://user-images.githubusercontent.com/39285147/218307300-5d517f49-3e27-466d-bad7-6b5315382046.png)
+
+이후, Query 이미지에 대해 Support set의 이미지들과 유사성을 구하고 가장 유사한 이미지를 가진 class로 분류할 수 있게 된다.
+
+![image](https://user-images.githubusercontent.com/39285147/218307347-8ddcbba9-92a3-4f4a-8bf0-2e7ba5793a0e.png)
+
+Positive set, Negative set으로 구성하여 학습을 진행하며, 일반적으로 Conv-Relu-Pool의 구조로도 충분히 특징 벡터를 잘 학습할 수 있다.
+
+Prediction에서는 Support set의 이미지의 representation과 Query image의 representation 간의 차이를 샴 네트워크를 이용해 유사성을 구할 수 있게 된다.
+
+[*샴 네트워크 (Siamese Network)*]
+
+![image](https://user-images.githubusercontent.com/39285147/218307455-7ebc336b-a60e-4387-9492-0b8778c045af.png)
+
+![image](https://user-images.githubusercontent.com/39285147/218307435-bc4880fb-3190-4d84-a066-6ae1c6c1e5d1.png)
+![image](https://user-images.githubusercontent.com/39285147/218307489-226f816d-e398-402b-9bc0-3924e71f215b.png)
+![image](https://user-images.githubusercontent.com/39285147/218307493-92cab8f7-d6b0-48a9-8b46-a39d493633d3.png)
+
+같은 CNN 모델을 이용하여 hidden representation을 각각 구한 뒤 이 차이를 이용한다.
+
+#### Zero/Few/One Shot
 **Zero-shot**
 - 일반적으로 딥러닝은 training에 사용된 class만을 예측할 수 있다. 따라서 unseen data가 입력되면 seen class로 예측하는 바보가 되버리는데, Zero shot은 train set에 포함되지 않은 unseen class를 예측하는 분야이다.
   - Unseen data를 입력 받아도, seen data로 학습된 지식을 전이하여 unseen data를 unseen class로 예측할 수 있다.
@@ -846,13 +883,19 @@ Pooling
 >
 > **NLP**: 동일한 의미적 공간에서의 레이블을 나타내는 '라벨 이해' 기능 기반
 
-
 **One-shot**
+
+![image](https://user-images.githubusercontent.com/39285147/218307562-6ba35d9f-aa6b-4687-ac20-cba372c93cca.png)
+
 - 모델을 1건의 데이터에 맞게 업데이트한다.
 - 보통의 얼굴 인식 시스템은 사용자의 사진이 한 장만 존재할 수도 있기 때문이다.
 
 **Few-shot**
+
+![image](https://user-images.githubusercontent.com/39285147/218307089-4f5d3fda-b52c-45a9-8f63-000262779e2a.png)
+
 - 모델을 몇 건의 데이터에 맞게 업데이트한다
+- Supervised learning은 학습에 강아지 사진을 주고 강아지를 잘 학습했는 지 묻지만, Few shot learning은 Training set에 없는 클래스를 맞추는 문제이다.
 
 </details>
 
