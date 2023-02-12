@@ -833,6 +833,27 @@ Pooling
 
 </details>
 
+
+#### 샴 네트워크
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/218309099-977c9aed-a383-4d70-a0f9-60514d02249b.png)
+
+샴네트워크는 두 사진을 입력으로 받아서 두 이미지를 벡터화 시킨 이후, 두 벡터간의 유사도 (similarity in [0, 1]) 를 반환하는 네트워크입니다.
+
+![image](https://user-images.githubusercontent.com/39285147/218309262-16567f25-e992-4b7f-8061-84d3dc224abc.png)
+
+샴 네트워크는 하나의 이미지를 하나의 벡터로 변환할 수 있는 weight를 가지고 있으며, 두 이미지는 공유되는 해당 weight를 이용하여 벡터로 인코딩 됩니다.
+
+이렇게 정의된 네트워크에 두 사진이 같을 경우 유사도(Similarity)를 1로 주고, 두 사진이 다를 경우 유사도(similarity)를 0 으로 주어서 모델을 학습시킵니다. 이때 학습에 사용하는 loss는 다음과 같이 cross-entropy를 사용합니다.
+
+![image](https://user-images.githubusercontent.com/39285147/218309338-ee63565c-ee51-4198-9229-0beebbad93cc.png)
+
+추출된 벡터간의 거리는 서로 유사한(=같은) 이미지끼리는 가까운 거리(높은 유사도) 를 가지고, 서로 다른 이미지 간에는 먼 거리를 (낮은 유사도) 가지도록 학습이 진행됩니다.
+
+</details>
+
 #### Zero-shot vs. One-shot vs. Few-shot Learning
 <details markdown="1">
 <summary></summary>
