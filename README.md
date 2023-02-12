@@ -1,4 +1,19 @@
 # 😊 AI 대학원 전공 면접 질문 모음 😊
+#### 멀티모델
+<details markdown="1">
+<summary></summary>
+
+멀티 모달은 앞서 소개한 바와 같이, 여러 가지 형태와 의미로 컴퓨터와 대화하는 환경을 뜻한다. 
+
+</details>
+
+#### 확산 (Diffusion model)
+<details markdown="1">
+<summary></summary>
+
+텍스트와 이미지, 개체 관의 관계를 통해 AI가 학습하는 ‘확산(diffusion) 모델’을 사용해서 지식을 축적한다.
+
+</details>
 
 ****
 # *Programming*
