@@ -1,4 +1,7 @@
 # 😊 AI 대학원 전공 면접 질문 모음 😊
+
+****
+# *초거대 AI*
 #### 멀티모델
 <details markdown="1">
 <summary></summary>
@@ -7,7 +10,7 @@
 
 </details>
 
-#### 확산 (Diffusion model)
+#### 확산모델 (Diffusion model)
 <details markdown="1">
 <summary></summary>
 
