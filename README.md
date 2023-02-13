@@ -458,6 +458,14 @@ t-SNE는 비선형적인 방법의 차원 축소 방법이고 특히 고차원�
 ****
 # *Deep Learning*
 
+#### End-to-end Learning
+<details markdown="1">
+<summary></summary>
+
+end-to-end 딥러닝은 자료처리 시스템 / 학습시스템에서 여러 단계의 필요한 처리과정을 한번에 처리한다.
+
+</details>
+
 #### Tensor(텐서)
 <details markdown="1">
 <summary></summary>
