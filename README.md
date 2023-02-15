@@ -14,7 +14,9 @@
 <details markdown="1">
 <summary></summary>
 
-텍스트와 이미지, 개체 관의 관계를 통해 AI가 학습하는 ‘확산(diffusion) 모델’을 사용해서 지식을 축적한다.
+Diffusion model은 위에서도 언급한 것처럼, data에 noise를 조금씩 더해가거나 noise로부터 조금씩 복원해가는 과정을 통해 data를 generate하는 모델이다.
+
+ 생성 모델에서 많이 활용되며, 텍스트와 이미지, 개체 관의 관계를 통해 AI가 학습하는 ‘확산(diffusion) 모델’을 사용해서 지식을 축적한다.
 
 </details>
 
