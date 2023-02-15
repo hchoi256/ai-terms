@@ -20,6 +20,20 @@ Diffusion model은 위에서도 언급한 것처럼, data에 noise를 조금씩 
 
 </details>
 
+
+#### Discretization(이산화)
+<details markdown="1">
+<summary></summary>
+
+![image](https://user-images.githubusercontent.com/39285147/218964981-4551f2d7-3d41-40ac-9609-afeed2324bd7.png)
+
+이산화에서는 전체 변수 값 범위에 걸쳐 있는 연속 간격 모음을 생성하여 연속 변수를 이산 기능으로 변환합니다. 이러한 불연속 값은 범주형 데이터로 처리된다.
+
+의사 결정 트리(decision treeo) 및 Naive Bayes와 같은 여러 회귀 및 분류 모델은 이산 값에서 더 나은 성능을 보이기 때문에 사용한다.
+ 
+
+</details>\
+
 ****
 # *Programming*
 #### 탐색 알고리즘 비교: BFS vs. DFS vs. UCS vs. IDS
