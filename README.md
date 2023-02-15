@@ -14,6 +14,8 @@
 <details markdown="1">
 <summary></summary>
 
+![image](https://user-images.githubusercontent.com/39285147/218965298-14366499-3b36-4721-bc91-c915bb99c1eb.png)
+
 Diffusion model은 위에서도 언급한 것처럼, data에 noise를 조금씩 더해가거나 noise로부터 조금씩 복원해가는 과정을 통해 data를 generate하는 모델이다.
 
  생성 모델에서 많이 활용되며, 텍스트와 이미지, 개체 관의 관계를 통해 AI가 학습하는 ‘확산(diffusion) 모델’을 사용해서 지식을 축적한다.
@@ -31,8 +33,7 @@ Diffusion model은 위에서도 언급한 것처럼, data에 noise를 조금씩 
 
 의사 결정 트리(decision treeo) 및 Naive Bayes와 같은 여러 회귀 및 분류 모델은 이산 값에서 더 나은 성능을 보이기 때문에 사용한다.
  
-
-</details>\
+</details>
 
 ****
 # *Programming*
